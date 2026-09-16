@@ -4,8 +4,91 @@ const GITHUB_USER = 'JacksonLuiz99';
 
 export const PROJECTS: Project[] = [
   {
+    slug: 'siae-pjc',
+    name: 'SIAE — Sistema Integrado de Acessos Externos',
+    description: {
+      pt: 'Sistema que digitaliza a concessão de acesso externo de pessoas físicas às dependências da PJC-MT, cobrindo solicitação, aprovação por superior e histórico de status. Back-end em Java/Quarkus com PostgreSQL; front-end em Angular integrado a um Design System institucional.',
+      en: 'A system that digitizes external-access requests to PJC-MT facilities, covering submission, supervisor approval and status history. Java/Quarkus back-end with PostgreSQL; Angular front-end built on an institutional Design System.',
+    },
+    tags: ['Angular', 'Java', 'Quarkus', 'PostgreSQL'],
+    liveUrl: 'https://siae.pjc.mt.gov.br/login/adm',
+    category: 'work',
+    featured: true,
+  },
+  {
+    slug: 'vinculum-pjc',
+    name: 'Vinculum',
+    description: {
+      pt: 'Sistema de apoio à investigação policial, com gestão de casos, consultas unificadas a fontes externas de dados e dashboards estatísticos. Autenticação corporativa robusta e controle de permissões por papel.',
+      en: 'A criminal-investigation support system with case management, unified lookups across external data sources, and statistical dashboards. Robust corporate authentication with role-based permissions.',
+    },
+    tags: ['Angular 17', 'RBAC'],
+    liveUrl: 'https://vinculum.pjc.mt.gov.br/sign-in',
+    category: 'work',
+    featured: true,
+  },
+  {
+    slug: 'argus-pjc',
+    name: 'Argus',
+    description: {
+      pt: 'Sistema de gestão interno da PJC-MT, em migração de Angular 19 (Material/Fuse) para Angular 22 (standalone, Signals), consumindo um Design System interno via NPM. Contribuí com o módulo de veículos e conduzi a migração do módulo de cooperação para o novo padrão.',
+      en: 'An internal PJC-MT management system being migrated from Angular 19 (Material/Fuse) to Angular 22 (standalone, Signals), built on an internal Design System distributed via NPM. I contributed the vehicles module and led the migration of the cooperation module onto the new standard.',
+    },
+    tags: ['Angular 22', 'Signals', 'Standalone', 'Design System'],
+    liveUrl: 'https://argusv2.pjc.mt.gov.br/sign-in',
+    category: 'work',
+    featured: true,
+  },
+  {
+    slug: 'checagem-externa-pjc',
+    name: 'Checagem Externa',
+    description: {
+      pt: 'Plataforma de apoio à segurança pública para checagem de dados de pessoas e veículos, com auditoria de acessos e acompanhamento de ocorrências. Arquitetura front-end em componentes Smart/Dumb com gerenciamento de estado via Facade.',
+      en: 'A public-safety support platform for checking data on people and vehicles, with access auditing and incident tracking. Smart/Dumb component front-end architecture with Facade-based state management.',
+    },
+    tags: ['Angular 17', 'Angular Material'],
+    liveUrl: 'https://checagem-externa.pjc.mt.gov.br/sign-in',
+    category: 'work',
+    featured: false,
+  },
+  {
+    slug: 'desaparecidos-web-pjc',
+    name: 'Desaparecidos Web',
+    description: {
+      pt: 'Front-end Angular de um sistema público de consulta a pessoas desaparecidas, criado originalmente como teste técnico de admissão. Consome uma API pública com busca por filtros e detalhes de cada caso. Stack: Angular 19, Angular Material e Tailwind CSS 4, com padrão Facade e estado reativo via RxJS; containerizado com Docker/Nginx e CI/CD no GitLab.',
+      en: 'Angular front-end for a public missing-persons lookup system, originally built as a technical hiring assessment. Consumes a public API with filtered search and case details. Stack: Angular 19, Angular Material and Tailwind CSS 4, with a Facade pattern and RxJS-driven state; containerized with Docker/Nginx and GitLab CI/CD.',
+    },
+    tags: ['Angular 19', 'Tailwind CSS', 'Docker', 'GitLab CI/CD'],
+    liveUrl: 'https://desaparecidos.pjc.mt.gov.br/',
+    category: 'work',
+    featured: false,
+  },
+  {
+    slug: 'gestao-projetos-institucionais-pjc',
+    name: 'Gestão de Projetos Institucionais',
+    description: {
+      pt: 'Sistema de gestão de projetos institucionais da PJC-MT, em Angular 22 (standalone, zoneless, Signals, SSR). Controla o ciclo de vida de projetos submetidos por unidades — criação, tramitação entre áreas, aprovação e notificações — com permissões por papel. Ainda em desenvolvimento, fora do ar publicamente.',
+      en: 'An institutional project-management system for PJC-MT, built with Angular 22 (standalone, zoneless, Signals, SSR). Controls the full lifecycle of projects submitted by units — creation, routing between areas, approval and notifications — with role-based permissions. Still in development, not yet publicly live.',
+    },
+    tags: ['Angular 22', 'Zoneless', 'Signals', 'SSR'],
+    category: 'work',
+    featured: false,
+  },
+  {
+    slug: 'sac-pjc',
+    name: 'SAC — Gestão de Chamados',
+    description: {
+      pt: 'Sistema de gestão de chamados de suporte técnico, reescrito de um app legado em Vue 3/Quasar para Angular moderno. Usuários abrem e acompanham chamados; atendentes gerenciam atendimentos em tempo real, com controle de acesso por perfil, anexos e módulos complementares.',
+      en: 'A technical-support ticketing system, rewritten from a legacy Vue 3/Quasar app to modern Angular. Users open and track tickets while agents manage them in real time, with role-based access control, attachments and complementary modules.',
+    },
+    tags: ['Angular', 'Signals', 'WebSocket', 'SSR'],
+    liveUrl: 'https://sac.pjc.mt.gov.br/login',
+    category: 'work',
+    featured: false,
+  },
+  {
     slug: 'pjc-desaparecidos',
-    name: 'PJC Desaparecidos',
+    name: 'Desaparecidos — Projeto Seletivo',
     description: {
       pt: 'Aplicação para consulta de pessoas desaparecidas, desenvolvida como projeto prático para o processo seletivo SEPLAG/PJC. Consumo de API REST, autenticação, paginação e boas práticas de front-end.',
       en: 'Missing-persons lookup application, built as a practical project for a public selection process at SEPLAG/PJC. REST API consumption, authentication, pagination and front-end best practices.',
@@ -13,7 +96,7 @@ export const PROJECTS: Project[] = [
     tags: ['Angular', 'TypeScript', 'API REST'],
     repoUrl: `https://github.com/${GITHUB_USER}/pjc-desaparecidos`,
     category: 'work',
-    featured: true,
+    featured: false,
   },
   {
     slug: 'gerador-de-cartaz-desaparecidos',
