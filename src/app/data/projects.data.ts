@@ -123,12 +123,12 @@ export const PROJECTS: Project[] = [
     },
   },
   {
-    slug: 'gestao-projetos-institucionais-pjc',
-    name: 'Gestão de Projetos Institucionais',
+    slug: 'sigep-pjc',
+    name: 'SIGEP — Sistema de Gerenciamento de Projetos',
     description: {
-      pt: 'Sistema de gestão de projetos institucionais da PJC-MT, em Angular 22 (standalone, zoneless, Signals, SSR). Controla o ciclo de vida de projetos submetidos por unidades — criação, tramitação entre áreas, aprovação e notificações — com permissões por papel. Ainda em desenvolvimento, fora do ar publicamente.',
-      en: 'An institutional project-management system for PJC-MT, built with Angular 22 (standalone, zoneless, Signals, SSR). Controls the full lifecycle of projects submitted by units — creation, routing between areas, approval and notifications — with role-based permissions. Still in development, not yet publicly live.',
-      es: 'Sistema de gestión de proyectos institucionales de la PJC-MT en Angular 22 (componentes independientes, sin Zone.js, Signals y SSR). Gestiona el ciclo de vida de los proyectos presentados por las unidades: creación, tramitación entre áreas, aprobación y notificaciones, con permisos basados en roles. Sigue en desarrollo y aún no está disponible públicamente.',
+      pt: 'O SIGEP é o Sistema de Gerenciamento de Projetos da PJC-MT, desenvolvido em Angular 22 (standalone, zoneless, Signals, SSR). Acompanha o ciclo de vida dos projetos enviados pelas unidades — criação, tramitação entre áreas, aprovação e notificações — com permissões por papel. Ainda em desenvolvimento, sem acesso público.',
+      en: 'SIGEP is PJC-MT’s Project Management System, built with Angular 22 (standalone, zoneless, Signals, SSR). It tracks projects submitted by units through creation, routing between areas, approval and notifications, with role-based permissions. Still in development, without public access.',
+      es: 'SIGEP es el Sistema de Gestión de Proyectos de la PJC-MT, desarrollado con Angular 22 (componentes independientes, sin Zone.js, Signals y SSR). Sigue los proyectos enviados por las unidades desde su creación y tramitación entre áreas hasta la aprobación y las notificaciones, con permisos por rol. Sigue en desarrollo, sin acceso público.',
     },
     tags: ['Angular 22', 'Zoneless', 'Signals', 'SSR'],
     category: 'work',
