@@ -1,0 +1,26 @@
+<section id="contact" class="border-t border-border py-24">
+  <div class="section-container">
+    <p class="font-mono text-sm text-accent">// {{ i18n.t('contact.kicker') }}</p>
+    <h2 class="mt-2 text-3xl font-bold text-text sm:text-4xl">{{ i18n.t('contact.title') }}</h2>
+    <p class="mt-3 max-w-2xl text-muted">{{ i18n.t('contact.subtitle') }}</p>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      @for (channel of channels; track channel.label) {
+        <a
+          [href]="channel.href"
+          target="_blank"
+          rel="noopener"
+          class="flex items-center gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent"
+        >
+          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border font-mono text-sm text-accent">
+            {{ channel.icon }}
+          </span>
+          <span>
+            <span class="block text-sm font-semibold text-text">{{ channel.label }}</span>
+            <span class="block font-mono text-xs text-muted">{{ channel.value }}</span>
+          </span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

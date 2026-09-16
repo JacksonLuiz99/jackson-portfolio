@@ -1,0 +1,59 @@
+<section id="education" class="border-t border-border py-24">
+  <div class="section-container">
+    <p class="font-mono text-sm text-accent">// {{ i18n.t('education.kicker') }}</p>
+    <h2 class="mt-2 text-3xl font-bold text-text sm:text-4xl">{{ i18n.t('education.title') }}</h2>
+
+    <div class="mt-12 grid gap-10 md:grid-cols-2">
+      <div>
+        <h3 class="font-mono text-sm font-semibold text-accent-2">{{ i18n.t('education.educationSubtitle') }}</h3>
+        <div class="mt-5 space-y-6">
+          @for (item of education; track item.institution) {
+            <div class="rounded-xl border border-border bg-surface p-5">
+              <div class="flex flex-wrap items-baseline justify-between gap-2">
+                <h4 class="font-semibold text-text">{{ item.institution }}</h4>
+                <span class="font-mono text-xs text-muted">{{ item.period }}</span>
+              </div>
+              <p class="mt-1 text-sm text-muted">{{ item.degree[i18n.lang()] }}</p>
+              @if (item.details) {
+                <p class="mt-2 text-sm leading-relaxed text-muted">{{ item.details[i18n.lang()] }}</p>
+              }
+            </div>
+          }
+        </div>
+
+        <h3 class="mt-10 font-mono text-sm font-semibold text-accent-2">{{ i18n.lang() === 'pt' ? 'Idiomas' : 'Languages' }}</h3>
+        <div class="mt-4 flex flex-wrap gap-3">
+          @for (language of languages; track language.name.pt) {
+            <span class="rounded-full border border-border px-3 py-1 font-mono text-xs text-muted">
+              {{ language.name[i18n.lang()] }} · {{ language.level[i18n.lang()] }}
+            </span>
+          }
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-mono text-sm font-semibold text-accent-2">{{ i18n.t('education.certsSubtitle') }}</h3>
+        <div class="mt-5 space-y-4">
+          @for (cert of certifications; track cert.name) {
+            <div class="flex items-start justify-between gap-3 rounded-xl border border-border bg-surface p-5">
+              <div>
+                <h4 class="font-semibold text-text">{{ cert.name }}</h4>
+                <p class="mt-1 font-mono text-xs text-muted">
+                  {{ cert.issuer }}
+                  @if (cert.date) {
+                    <span> · {{ cert.date }}</span>
+                  }
+                </p>
+              </div>
+              @if (cert.url) {
+                <a [href]="cert.url" target="_blank" rel="noopener" class="shrink-0 font-mono text-xs text-accent-2 hover:underline">
+                  {{ i18n.t('education.viewCredential') }}
+                </a>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
