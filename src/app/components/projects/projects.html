@@ -1,0 +1,66 @@
+<section id="projects" class="border-t border-border py-24">
+  <div class="section-container">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="font-mono text-sm text-accent">// {{ i18n.t('projects.kicker') }}</p>
+        <h2 class="mt-2 text-3xl font-bold text-text sm:text-4xl">{{ i18n.t('projects.title') }}</h2>
+        <p class="mt-3 max-w-2xl text-muted">{{ i18n.t('projects.subtitle') }}</p>
+      </div>
+
+      <a
+        [href]="githubProfileUrl"
+        target="_blank"
+        rel="noopener"
+        class="font-mono text-sm text-accent-2 hover:underline"
+      >{{ i18n.t('projects.viewMore') }} →</a>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-2">
+      @for (f of filters; track f.key) {
+        <button
+          type="button"
+          (click)="setFilter(f.key)"
+          class="rounded-full border px-4 py-1.5 font-mono text-xs transition-colors"
+          [class.border-accent]="filter() === f.key"
+          [class.text-accent]="filter() === f.key"
+          [class.border-border]="filter() !== f.key"
+          [class.text-muted]="filter() !== f.key"
+        >{{ i18n.t(f.labelKey) }}</button>
+      }
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      @for (project of visibleProjects(); track project.slug) {
+        <article class="flex flex-col rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/60">
+          <div class="flex items-start justify-between gap-2">
+            <h3 class="text-lg font-semibold text-text">{{ project.name }}</h3>
+            @if (project.featured) {
+              <span class="rounded-full bg-accent/10 px-2 py-0.5 font-mono text-[0.65rem] text-accent">★</span>
+            }
+          </div>
+
+          <p class="mt-3 flex-1 text-sm leading-relaxed text-muted">{{ project.description[i18n.lang()] }}</p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            @for (tag of project.tags; track tag) {
+              <span class="rounded-md border border-border px-2 py-0.5 font-mono text-[0.7rem] text-muted">{{ tag }}</span>
+            }
+          </div>
+
+          <div class="mt-5 flex gap-4 font-mono text-sm">
+            @if (project.repoUrl) {
+              <a [href]="project.repoUrl" target="_blank" rel="noopener" class="text-accent-2 hover:underline">
+                {{ i18n.t('projects.viewCode') }}
+              </a>
+            }
+            @if (project.liveUrl) {
+              <a [href]="project.liveUrl" target="_blank" rel="noopener" class="text-accent-2 hover:underline">
+                {{ i18n.t('projects.viewLive') }}
+              </a>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>
