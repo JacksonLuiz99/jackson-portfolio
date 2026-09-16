@@ -60,16 +60,12 @@ export const EXPERIENCE: ExperienceItem[] = [
 
 export const EDUCATION: EducationItem[] = [
   {
-    institution: 'UNOPAR — Universidade Norte do Paraná',
+    institution: 'Faculdade de Minas',
     degree: {
-      pt: 'Pós-graduação Lato Sensu — Especialização em Desenvolvimento Front-End',
-      en: 'Postgraduate Specialization — Front-End Development',
+      pt: 'Pós-graduação Lato Sensu — Especialização em Docência em Sistemas de Informações',
+      en: 'Postgraduate Specialization — Teaching in Information Systems',
     },
-    period: 'mar de 2023 – jan de 2024',
-    details: {
-      pt: 'Linguagens e padrões web, frameworks front-end, técnicas avançadas de CSS e JavaScript, Node.js, UX, apps móveis, APIs e projetos ágeis.',
-      en: 'Web languages and standards, front-end frameworks, advanced CSS and JavaScript, Node.js, UX, mobile apps, APIs and agile projects.',
-    },
+    period: 'fev de 2025 – ago de 2026',
   },
   {
     institution: 'Faculdade de Minas',
@@ -83,6 +79,38 @@ export const EDUCATION: EducationItem[] = [
       en: 'Bootstrap, front-end development and information technology.',
     },
   },
+  {
+    institution: 'UNOPAR — Universidade Norte do Paraná',
+    degree: {
+      pt: 'Pós-graduação Lato Sensu — Especialização em Desenvolvimento Front-End',
+      en: 'Postgraduate Specialization — Front-End Development',
+    },
+    period: 'mar de 2023 – jan de 2024',
+    details: {
+      pt: 'Linguagens e padrões web, frameworks front-end, técnicas avançadas de CSS e JavaScript, Node.js, UX, apps móveis, APIs e projetos ágeis.',
+      en: 'Web languages and standards, front-end frameworks, advanced CSS and JavaScript, Node.js, UX, mobile apps, APIs and agile projects.',
+    },
+  },
+  {
+    institution: 'UNOPAR — Universidade Norte do Paraná',
+    degree: {
+      pt: 'Curso Superior de Tecnologia (CST) — Análise e Desenvolvimento de Sistemas',
+      en: 'Associate Degree (Technologist) — Systems Analysis and Development',
+    },
+    period: '2021 – jun de 2023',
+  },
+  {
+    institution: 'Unic — Universidade de Cuiabá',
+    degree: {
+      pt: 'Sistemas de Informação',
+      en: 'Information Systems',
+    },
+    period: 'fev de 2016 – ago de 2018',
+    details: {
+      pt: 'Curso cursado parcialmente (5 de 8 semestres). Estudos retomados depois no curso de Análise e Desenvolvimento de Sistemas pela UNOPAR, com reaproveitamento de disciplinas.',
+      en: 'Partially completed (5 of 8 semesters). Studies later resumed in the Systems Analysis and Development program at UNOPAR, with credit transfer for completed courses.',
+    },
+  },
 ];
 
 export const CERTIFICATIONS: CertificationItem[] = [
@@ -90,16 +118,40 @@ export const CERTIFICATIONS: CertificationItem[] = [
     name: 'Angular 17 — CRUD completo com Firebase',
     issuer: 'Udemy',
     date: 'fev de 2025',
+    url: 'https://www.udemy.com/certificate/UC-d30685f3-27ed-4564-a634-0afc2d7cf2cc/',
   },
   {
     name: 'Web Moderno Completo com JavaScript + Projetos',
     issuer: 'Udemy',
     date: 'jun de 2024',
+    url: 'https://www.udemy.com/certificate/UC-326644fd-8c46-4374-8381-7f4f36bea6e8/',
   },
   {
-    name: 'Scrum Foundation',
-    issuer: 'Scrum Foundation',
+    name: 'Manipulando banco de dados com Navicat',
+    issuer: 'Udemy',
+    date: 'jun de 2023',
+    url: 'https://www.udemy.com/certificate/UC-0a6f4707-beef-4479-a50ffa7501f6a8dc/',
+  },
+  {
+    name: 'DevLinks',
+    issuer: 'Rocketseat',
+    date: 'jun de 2023',
+  },
+  {
+    name: 'Scrum Foundation Professional Certificate (SFPC)',
+    issuer: 'Certiprof',
+    date: 'jun de 2023',
+  },
+  {
+    name: 'Curso de PHP',
+    issuer: 'Curso em Vídeo',
+    date: 'mar de 2018',
+  },
+  {
+    name: 'Java para Iniciantes ao Intermediário',
+    issuer: 'Udemy',
     date: '',
+    url: 'https://www.udemy.com/certificate/UC-b613f18f-f47f-49b2-a2c9-4661c99471f3/',
   },
 ];
 
