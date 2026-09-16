@@ -51,6 +51,28 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       aiWorkflow: 'IA & Fluxo de Trabalho',
       aiWorkflowDescription:
         'Uso Claude e Codex com a abordagem SDD e ferramentas como Headroom e RTK.',
+      sddTitle: 'Desenvolvimento orientado por especificações',
+      sddDescription:
+        'No Spec-Driven Development (SDD), specs estruturadas registram regras de negócio, decisões de arquitetura e critérios de aceitação. Elas orientam o trabalho de pessoas e agentes de IA e permanecem como referência para implementação e validação.',
+      sddSteps: {
+        spec: {
+          title: 'Especificação',
+          description:
+            'Defino o problema, os objetivos, o escopo e os critérios de aceitação com apoio da IA.',
+        },
+        plan: {
+          title: 'Planejamento técnico',
+          description:
+            'Organizo tarefas por etapas e registro padrões de código e orientações para os agentes.',
+        },
+        implement: {
+          title: 'Implementação e revisão',
+          description:
+            'Claude e Codex implementam com base na spec; reviso código, testes e critérios de aceitação.',
+        },
+      },
+      sddRole:
+        'Meu papel: escrever especificações claras, orientar os agentes e validar o resultado antes da entrega.',
     },
     projects: {
       title: 'Projetos',
@@ -147,6 +169,28 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       aiWorkflow: 'AI & Workflow',
       aiWorkflowDescription:
         'I use Claude and Codex with an SDD approach and tools such as Headroom and RTK.',
+      sddTitle: 'Spec-driven development',
+      sddDescription:
+        'In Spec-Driven Development (SDD), structured specs record business rules, architecture decisions and acceptance criteria. They guide both people and AI agents and remain the reference for implementation and validation.',
+      sddSteps: {
+        spec: {
+          title: 'Specification',
+          description:
+            'I define the problem, goals, scope and acceptance criteria with AI support.',
+        },
+        plan: {
+          title: 'Technical planning',
+          description:
+            'I organize tasks into stages and record coding standards and guidance for agents.',
+        },
+        implement: {
+          title: 'Implementation and review',
+          description:
+            'Claude and Codex implement from the spec; I review code, tests and acceptance criteria.',
+        },
+      },
+      sddRole:
+        'My role: write clear specs, guide the agents and validate the result before delivery.',
     },
     projects: {
       title: 'Projects',
@@ -243,6 +287,28 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       aiWorkflow: 'IA y flujo de trabajo',
       aiWorkflowDescription:
         'Uso Claude y Codex con el enfoque SDD y herramientas como Headroom y RTK.',
+      sddTitle: 'Desarrollo guiado por especificaciones',
+      sddDescription:
+        'En Spec-Driven Development (SDD), las specs estructuradas registran reglas de negocio, decisiones de arquitectura y criterios de aceptación. Guían a personas y agentes de IA y sirven de referencia para la implementación y la validación.',
+      sddSteps: {
+        spec: {
+          title: 'Especificación',
+          description:
+            'Defino el problema, los objetivos, el alcance y los criterios de aceptación con apoyo de la IA.',
+        },
+        plan: {
+          title: 'Planificación técnica',
+          description:
+            'Organizo las tareas por etapas y documento estándares de código e instrucciones para los agentes.',
+        },
+        implement: {
+          title: 'Implementación y revisión',
+          description:
+            'Claude y Codex implementan según la spec; reviso código, pruebas y criterios de aceptación.',
+        },
+      },
+      sddRole:
+        'Mi papel: redactar specs claras, guiar a los agentes y validar el resultado antes de la entrega.',
     },
     projects: {
       title: 'Proyectos',

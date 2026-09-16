@@ -10,6 +10,8 @@ import { TechLabelComponent } from '../tech-label/tech-label';
   styleUrl: './skills.scss',
 })
 export class SkillsComponent {
+  readonly sddSteps = ['spec', 'plan', 'implement'] as const;
+
   readonly groups: { titleKey: string; descriptionKey?: string; items: string[] }[] = [
     { titleKey: 'skills.frontend', items: SKILLS.frontend },
     { titleKey: 'skills.backendTools', items: SKILLS.backendTools },
