@@ -38,4 +38,14 @@ describe('TechLabelComponent', () => {
       localStorage.removeItem('portfolio-lang');
     }
   });
+
+  it('links PJC Kit to its documentation', () => {
+    const fixture = TestBed.createComponent(TechLabelComponent);
+    fixture.componentRef.setInput('label', 'PJC Kit');
+    fixture.detectChanges();
+
+    const link = fixture.nativeElement.querySelector('a') as HTMLAnchorElement;
+    expect(link.textContent).toContain('PJC Kit');
+    expect(link.href).toBe('https://pjckit.geia.vip/docs/v0/inicio');
+  });
 });

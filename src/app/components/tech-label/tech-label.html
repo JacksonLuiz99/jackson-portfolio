@@ -16,5 +16,11 @@
       }
     </span>
   }
-  <span>{{ displayLabel() }}</span>
+  @if (href(); as url) {
+    <a [href]="url" target="_blank" rel="noopener noreferrer" class="text-accent-2 hover:underline">
+      {{ displayLabel() }} ↗
+    </a>
+  } @else {
+    <span>{{ displayLabel() }}</span>
+  }
 </span>

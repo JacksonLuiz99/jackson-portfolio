@@ -143,7 +143,7 @@
       }
     </div>
 
-    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div id="project-list" class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       @for (project of visibleProjects(); track project.slug) {
         <article
           class="flex flex-col rounded-xl border border-border bg-surface p-6 transition-colors hover:border-accent/60"
@@ -196,5 +196,18 @@
         </article>
       }
     </div>
+    @if (hasMoreProjects()) {
+      <div class="mt-8 flex justify-center">
+        <button
+          type="button"
+          (click)="toggleExpanded()"
+          [attr.aria-expanded]="expanded()"
+          aria-controls="project-list"
+          class="rounded-full border border-border px-5 py-2 font-mono text-sm text-text transition-colors hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/30"
+        >
+          {{ i18n.t(expanded() ? 'projects.showLess' : 'projects.showMore') }}
+        </button>
+      </div>
+    }
   </div>
 </section>

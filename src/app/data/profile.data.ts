@@ -20,11 +20,20 @@ export const EXPERIENCE: ExperienceItem[] = [
       es: 'Cuiabá, Brasil · Presencial',
     },
     description: {
-      pt: 'Atuo na evolução técnica dos sistemas do ecossistema GEIA (Argus, Vículum, Chamados, entre outros), com foco em arquitetura de front-end, componentização e integração com APIs REST. Contribuo para decisões técnicas, padronização de interfaces, performance e experiência do usuário em sistemas em produção. Cargo conquistado no Processo Seletivo Simplificado Conjunto nº 001/2026/SEPLAG, com projeto prático em Angular (SPA, JWT, paginação, lazy loading, testes unitários e Facade/RxJS) com pontuação máxima nos critérios técnicos.',
-      en: 'I work on the technical evolution of the GEIA ecosystem systems (Argus, Vículum, Chamados, among others), focusing on front-end architecture, componentization and REST API integration. I contribute to technical decisions, UI standardization, performance and user experience on production systems. Promoted through a public selection process with a practical Angular project (SPA, JWT auth, pagination, lazy loading, unit tests and Facade/RxJS) that scored top marks on technical criteria.',
-      es: 'Trabajo en la evolución técnica de los sistemas del ecosistema GEIA (Argus, Vículum, Chamados, entre otros), con énfasis en la arquitectura front-end, los componentes y la integración con API REST. Contribuyo a las decisiones técnicas, la estandarización de interfaces, el rendimiento y la experiencia de usuario en sistemas en producción. Obtuve el puesto mediante un proceso público de selección con un proyecto práctico en Angular (SPA, JWT, paginación, carga diferida, pruebas unitarias y Facade/RxJS) que alcanzó la máxima puntuación técnica.',
+      pt: 'Atuo na evolução técnica dos sistemas do ecossistema GEIA (Argus, Vículum, Chamados, entre outros), com foco em arquitetura de front-end, componentização e integração com APIs REST. Atualmente utilizo o PJC Kit no front-end para padronizar componentes e interfaces. Contribuo para decisões técnicas, performance e experiência do usuário em sistemas em produção. Cargo conquistado no Processo Seletivo Simplificado Conjunto nº 001/2026/SEPLAG, com projeto prático em Angular (SPA, JWT, paginação, lazy loading, testes unitários e Facade/RxJS) com pontuação máxima nos critérios técnicos.',
+      en: 'I work on the technical evolution of the GEIA ecosystem systems (Argus, Vículum, Chamados, among others), focusing on front-end architecture, componentization and REST API integration. I currently use PJC Kit on the front end to standardize components and interfaces. I contribute to technical decisions, performance and user experience on production systems. Promoted through a public selection process with a practical Angular project (SPA, JWT auth, pagination, lazy loading, unit tests and Facade/RxJS) that scored top marks on technical criteria.',
+      es: 'Trabajo en la evolución técnica de los sistemas del ecosistema GEIA (Argus, Vículum, Chamados, entre otros), con énfasis en la arquitectura front-end, los componentes y la integración con API REST. Actualmente uso PJC Kit en el front-end para estandarizar componentes e interfaces. Contribuyo a las decisiones técnicas, el rendimiento y la experiencia de usuario en sistemas en producción. Obtuve el puesto mediante un proceso público de selección con un proyecto práctico en Angular (SPA, JWT, paginación, carga diferida, pruebas unitarias y Facade/RxJS) que alcanzó la máxima puntuación técnica.',
     },
-    tags: ['Angular', 'TypeScript', 'RxJS', 'Tailwind CSS', 'PrimeNG', 'Fuse', 'Angular Material'],
+    tags: [
+      'Angular',
+      'TypeScript',
+      'RxJS',
+      'Tailwind CSS',
+      'PJC Kit',
+      'PrimeNG',
+      'Fuse',
+      'Angular Material',
+    ],
   },
   {
     role: {
@@ -243,6 +252,7 @@ export const SKILLS = {
     'TypeScript',
     'RxJS',
     'Angular Material',
+    'PJC Kit',
     'PrimeNG',
     'Fuse',
     'Tailwind CSS',

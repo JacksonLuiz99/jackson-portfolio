@@ -16,6 +16,7 @@ const ICONS: Record<string, TechIcon> = {
   RxJS: { svg: 'reactivex', background: '#9b146f' },
   'Tailwind CSS': { svg: 'tailwindcss', background: '#087e9b' },
   PrimeNG: { svg: 'primeng', background: '#1769aa' },
+  'PJC Kit': { mark: 'P', background: '#006f83' },
   Fuse: { mark: 'F', background: '#6648a8' },
   HTML: { svg: 'html5', background: '#ae3c1d' },
   CSS: { svg: 'css', background: '#155e9b' },
@@ -63,6 +64,9 @@ function iconFor(label: string): TechIcon | undefined {
 export class TechLabelComponent {
   readonly label = input.required<string>();
   readonly icon = computed(() => iconFor(this.label()));
+  readonly href = computed(() =>
+    this.label() === 'PJC Kit' ? 'https://pjckit.geia.vip/docs/v0/inicio' : undefined,
+  );
 
   constructor(readonly i18n: TranslationService) {}
 
