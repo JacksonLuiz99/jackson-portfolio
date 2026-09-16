@@ -18,7 +18,7 @@
             @for (skill of group.items; track skill) {
               <span
                 class="rounded-md border border-border bg-surface-2 px-2.5 py-1 font-mono text-xs text-text"
-                ><app-tech-label [label]="skill"
+                ><app-tech-label [label]="skill" [documentationUrl]="documentation[skill]"
               /></span>
             }
           </div>

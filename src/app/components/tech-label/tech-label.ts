@@ -63,9 +63,12 @@ function iconFor(label: string): TechIcon | undefined {
 })
 export class TechLabelComponent {
   readonly label = input.required<string>();
+  readonly documentationUrl = input<string>();
   readonly icon = computed(() => iconFor(this.label()));
-  readonly href = computed(() =>
-    this.label() === 'PJC Kit' ? 'https://pjckit.geia.vip/docs/v0/inicio' : undefined,
+  readonly href = computed(
+    () =>
+      this.documentationUrl() ??
+      (this.label() === 'PJC Kit' ? 'https://pjckit.geia.vip/docs/v0/inicio' : undefined),
   );
 
   constructor(readonly i18n: TranslationService) {}

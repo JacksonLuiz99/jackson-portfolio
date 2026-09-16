@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslationService } from '../../core/i18n/translation.service';
 import { SKILLS } from '../../data/profile.data';
+import { SKILL_DOCUMENTATION } from '../../data/skill-documentation.data';
 import { TechLabelComponent } from '../tech-label/tech-label';
 
 @Component({
@@ -10,6 +11,7 @@ import { TechLabelComponent } from '../tech-label/tech-label';
   styleUrl: './skills.scss',
 })
 export class SkillsComponent {
+  readonly documentation = SKILL_DOCUMENTATION;
   readonly sddSteps = ['spec', 'plan', 'implement'] as const;
 
   readonly groups: { titleKey: string; descriptionKey?: string; items: string[] }[] = [
