@@ -8,10 +8,15 @@ import { SKILLS } from '../../data/profile.data';
   styleUrl: './skills.scss',
 })
 export class SkillsComponent {
-  readonly groups: { titleKey: string; items: string[] }[] = [
+  readonly groups: { titleKey: string; descriptionKey?: string; items: string[] }[] = [
     { titleKey: 'skills.frontend', items: SKILLS.frontend },
     { titleKey: 'skills.backendTools', items: SKILLS.backendTools },
     { titleKey: 'skills.practices', items: SKILLS.practices },
+    {
+      titleKey: 'skills.aiWorkflow',
+      descriptionKey: 'skills.aiWorkflowDescription',
+      items: SKILLS.aiWorkflow,
+    },
   ];
 
   constructor(readonly i18n: TranslationService) {}

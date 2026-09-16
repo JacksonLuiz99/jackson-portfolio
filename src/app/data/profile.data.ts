@@ -37,7 +37,10 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     role: { pt: 'Estagiário de Pós-graduação', en: 'Postgraduate Intern' },
     company: 'Polícia Judiciária Civil do Estado de Mato Grosso',
-    period: { pt: 'abr de 2023 — out de 2024 · 1 ano e 7 meses', en: 'Apr 2023 — Oct 2024 · 1 yr 7 mos' },
+    period: {
+      pt: 'abr de 2023 — out de 2024 · 1 ano e 7 meses',
+      en: 'Apr 2023 — Oct 2024 · 1 yr 7 mos',
+    },
     location: { pt: 'Cuiabá, MT · Híbrido', en: 'Cuiabá, Brazil · Hybrid' },
     description: {
       pt: 'Suporte técnico (helpdesk) da PJC-MT, com atendimentos remotos e manutenção preventiva e corretiva de computadores, dando continuidade ao trabalho iniciado no estágio de TI.',
@@ -48,7 +51,10 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     role: { pt: 'Estagiário de TI', en: 'IT Intern' },
     company: 'Polícia Judiciária Civil do Estado de Mato Grosso',
-    period: { pt: 'ago de 2017 — abr de 2019 · 1 ano e 9 meses', en: 'Aug 2017 — Apr 2019 · 1 yr 9 mos' },
+    period: {
+      pt: 'ago de 2017 — abr de 2019 · 1 ano e 9 meses',
+      en: 'Aug 2017 — Apr 2019 · 1 yr 9 mos',
+    },
     location: { pt: 'Cuiabá, MT · No local', en: 'Cuiabá, Brazil · On-site' },
     description: {
       pt: 'Atendimento de chamados para manutenção preventiva e reparo de computadores nas delegacias do estado, elaboração de relatórios no GLPI e suporte a usuários, incluindo instalação de servidores locais e configuração de redes.',
@@ -156,9 +162,28 @@ export const CERTIFICATIONS: CertificationItem[] = [
 ];
 
 export const SKILLS = {
-  frontend: ['Angular', 'TypeScript', 'RxJS', 'Angular Material', 'PrimeNG', 'Fuse', 'Tailwind CSS', 'HTML5', 'CSS3/SCSS', 'JavaScript'],
+  frontend: [
+    'Angular',
+    'TypeScript',
+    'RxJS',
+    'Angular Material',
+    'PrimeNG',
+    'Fuse',
+    'Tailwind CSS',
+    'HTML5',
+    'CSS3/SCSS',
+    'JavaScript',
+  ],
   backendTools: ['API REST', 'Node.js', 'Firebase', 'Java', 'Git', 'GitHub'],
-  practices: ['Scrum', 'CI/CD', 'Testes unitários', 'Clean Architecture', 'Padrões de projeto', 'Componentização'],
+  practices: [
+    'Scrum',
+    'CI/CD',
+    'Testes unitários',
+    'Clean Architecture',
+    'Padrões de projeto',
+    'Componentização',
+  ],
+  aiWorkflow: ['Claude', 'Codex', 'SDD', 'Headroom', 'RTK'],
 };
 
 export const LANGUAGES = [

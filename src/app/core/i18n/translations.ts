@@ -43,6 +43,9 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       frontend: 'Front-End',
       backendTools: 'Back-End & Ferramentas',
       practices: 'Práticas & Metodologias',
+      aiWorkflow: 'IA & Fluxo de Trabalho',
+      aiWorkflowDescription:
+        'Uso Claude e Codex com a abordagem SDD e ferramentas como Headroom e RTK.',
     },
     projects: {
       title: 'Projetos',
@@ -127,6 +130,9 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       frontend: 'Front-End',
       backendTools: 'Back-End & Tools',
       practices: 'Practices & Methodologies',
+      aiWorkflow: 'AI & Workflow',
+      aiWorkflowDescription:
+        'I use Claude and Codex with an SDD approach and tools such as Headroom and RTK.',
     },
     projects: {
       title: 'Projects',
