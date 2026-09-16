@@ -4,7 +4,8 @@ export const EXPERIENCE: ExperienceItem[] = [
   {
     role: { pt: 'Engenheiro de Software Sênior', en: 'Senior Software Engineer' },
     company: 'Polícia Judiciária Civil do Estado de Mato Grosso',
-    period: { pt: 'abr de 2026 — atual', en: 'Apr 2026 — present' },
+    period: { pt: '01/04/2026 — atual', en: 'Apr 1, 2026 — present' },
+    currentSince: '2026-04-01T00:00:00-04:00',
     location: { pt: 'Cuiabá, MT · Presencial', en: 'Cuiabá, Brazil · On-site' },
     description: {
       pt: 'Atuo na evolução técnica dos sistemas do ecossistema GEIA (Argus, Vículum, Chamados, entre outros), com foco em arquitetura de front-end, componentização e integração com APIs REST. Contribuo para decisões técnicas, padronização de interfaces, performance e experiência do usuário em sistemas em produção. Cargo conquistado no Processo Seletivo Simplificado Conjunto nº 001/2026/SEPLAG, com projeto prático em Angular (SPA, JWT, paginação, lazy loading, testes unitários e Facade/RxJS) com pontuação máxima nos critérios técnicos.',

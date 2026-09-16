@@ -13,7 +13,12 @@
 
           <div class="flex flex-wrap items-baseline justify-between gap-2">
             <h3 class="text-lg font-semibold text-text">{{ item.role[i18n.lang()] }}</h3>
-            <span class="font-mono text-xs text-accent-2">{{ item.period[i18n.lang()] }}</span>
+            <span class="font-mono text-xs text-accent-2">
+              {{ item.period[i18n.lang()] }}
+              @if (item.currentSince; as start) {
+                · {{ elapsedSince(start) }}
+              }
+            </span>
           </div>
 
           <p class="font-mono text-sm text-muted">

@@ -10,6 +10,7 @@ export interface ExperienceItem {
   company: string;
   companyUrl?: string;
   period: LocalizedText;
+  currentSince?: string;
   location: LocalizedText;
   description: LocalizedText;
   tags: string[];
