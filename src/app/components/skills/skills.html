@@ -1,0 +1,19 @@
+<section id="skills" class="border-t border-border py-24">
+  <div class="section-container">
+    <p class="font-mono text-sm text-accent">// {{ i18n.t('skills.kicker') }}</p>
+    <h2 class="mt-2 text-3xl font-bold text-text sm:text-4xl">{{ i18n.t('skills.title') }}</h2>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-3">
+      @for (group of groups; track group.titleKey) {
+        <div class="rounded-xl border border-border bg-surface p-6">
+          <h3 class="font-mono text-sm font-semibold text-accent-2">{{ i18n.t(group.titleKey) }}</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            @for (skill of group.items; track skill) {
+              <span class="rounded-md border border-border bg-surface-2 px-2.5 py-1 font-mono text-xs text-text">{{ skill }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
