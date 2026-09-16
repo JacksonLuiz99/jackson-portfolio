@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract request workflow">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#10343a"/><stop offset="1" stop-color="#0d161e"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="24" fill="url(#bg)"/>
+  <rect x="38" y="35" width="564" height="330" rx="15" fill="#111a23" stroke="#31505a"/>
+  <path d="M38 82h564" stroke="#31505a"/>
+  <circle cx="61" cy="59" r="6" fill="#22d3ee"/><circle cx="83" cy="59" r="6" fill="#31505a"/><circle cx="105" cy="59" r="6" fill="#31505a"/>
+  <rect x="64" y="110" width="154" height="228" rx="9" fill="#172731"/>
+  <rect x="82" y="132" width="81" height="10" rx="5" fill="#3b6470"/>
+  <rect x="82" y="166" width="117" height="30" rx="6" fill="#145865"/>
+  <rect x="82" y="212" width="95" height="8" rx="4" fill="#355360"/>
+  <rect x="82" y="233" width="106" height="8" rx="4" fill="#355360"/>
+  <rect x="82" y="254" width="76" height="8" rx="4" fill="#355360"/>
+  <rect x="249" y="113" width="321" height="73" rx="9" fill="#1b3039"/>
+  <rect x="270" y="131" width="122" height="10" rx="5" fill="#6ea5ae"/>
+  <rect x="270" y="155" width="220" height="8" rx="4" fill="#3d636e"/>
+  <circle cx="281" cy="243" r="19" fill="#22d3ee"/><path d="m274 243 5 5 9-11" fill="none" stroke="#0b2026" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 243h79" stroke="#436f78" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="401" cy="243" r="19" fill="#22d3ee"/><path d="m394 243 5 5 9-11" fill="none" stroke="#0b2026" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M420 243h79" stroke="#436f78" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="521" cy="243" r="19" fill="#164a54" stroke="#22d3ee" stroke-width="3"/>
+  <rect x="249" y="288" width="321" height="50" rx="9" fill="#172731"/>
+  <rect x="269" y="308" width="148" height="9" rx="4" fill="#416e77"/>
+  <rect x="488" y="302" width="61" height="21" rx="10" fill="#164a54"/>
+</svg>

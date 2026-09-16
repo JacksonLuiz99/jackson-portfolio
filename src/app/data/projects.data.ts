@@ -11,9 +11,24 @@ export const PROJECTS: Project[] = [
       en: 'A system that digitizes external-access requests to PJC-MT facilities, covering submission, supervisor approval and status history. Java/Quarkus back-end with PostgreSQL; Angular front-end built on an institutional Design System.',
     },
     tags: ['Angular', 'Java', 'Quarkus', 'PostgreSQL'],
-    liveUrl: 'https://siae.pjc.mt.gov.br/login/adm',
+    liveUrl: 'https://siae.pjc.mt.gov.br/login',
     category: 'work',
     featured: true,
+    caseStudy: {
+      challenge: {
+        pt: 'Organizar a solicitação e aprovação de acessos externos às dependências da PJC-MT.',
+        en: 'Organize external access requests and approvals for PJC-MT facilities.',
+      },
+      contribution: {
+        pt: 'Front-end Angular integrado ao Design System institucional e aos fluxos de solicitação e aprovação.',
+        en: 'Angular front end integrated with the institutional Design System and request and approval flows.',
+      },
+      outcome: {
+        pt: 'Solicitações, aprovação por superior e histórico de status reunidos em um fluxo digital.',
+        en: 'Requests, supervisor approval and status history brought together in a digital flow.',
+      },
+      illustration: 'projects/siae.svg',
+    },
   },
   {
     slug: 'vinculum-pjc',
@@ -38,6 +53,21 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://argusv2.pjc.mt.gov.br/sign-in',
     category: 'work',
     featured: true,
+    caseStudy: {
+      challenge: {
+        pt: 'Migrar módulos de um sistema interno para o novo padrão de front-end da instituição.',
+        en: 'Migrate internal system modules to the institution’s new front-end standard.',
+      },
+      contribution: {
+        pt: 'Contribuição no módulo de veículos e condução da migração do módulo de cooperação para Angular 22.',
+        en: 'Contributed to the vehicles module and led the cooperation module migration to Angular 22.',
+      },
+      outcome: {
+        pt: 'Módulo de cooperação alinhado ao novo padrão com componentes standalone, Signals e Design System interno.',
+        en: 'Cooperation module aligned with the new standard using standalone components, Signals and the internal Design System.',
+      },
+      illustration: 'projects/argus.svg',
+    },
   },
   {
     slug: 'checagem-externa-pjc',
@@ -62,6 +92,21 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://desaparecidos.pjc.mt.gov.br/',
     category: 'work',
     featured: false,
+    caseStudy: {
+      challenge: {
+        pt: 'Facilitar a consulta pública a casos de pessoas desaparecidas por meio de busca e filtros.',
+        en: 'Make public missing-person cases easier to search and filter.',
+      },
+      contribution: {
+        pt: 'Desenvolvimento do front-end Angular com filtros, detalhes dos casos e estado reativo via Facade e RxJS.',
+        en: 'Built the Angular front end with filters, case details and reactive state through Facade and RxJS.',
+      },
+      outcome: {
+        pt: 'Consulta pública de pessoas desaparecidas com busca por filtros e acesso aos detalhes de cada caso.',
+        en: 'Public missing-person lookup with filtered search and access to each case’s details.',
+      },
+      illustration: 'projects/desaparecidos.svg',
+    },
   },
   {
     slug: 'gestao-projetos-institucionais-pjc',
@@ -97,18 +142,6 @@ export const PROJECTS: Project[] = [
     repoUrl: `https://github.com/${GITHUB_USER}/pjc-desaparecidos`,
     category: 'work',
     featured: false,
-  },
-  {
-    slug: 'gerador-de-cartaz-desaparecidos',
-    name: 'Gerador de Cartaz — Pessoas Desaparecidas',
-    description: {
-      pt: 'Ferramenta para gerar cartazes de pessoas desaparecidas em Mato Grosso a partir dos dados do caso.',
-      en: 'Tool to generate missing-person posters for Mato Grosso from case data.',
-    },
-    tags: ['CSS', 'JavaScript'],
-    repoUrl: `https://github.com/${GITHUB_USER}/gerador-de-cartaz-desaparecidos`,
-    category: 'work',
-    featured: true,
   },
   {
     slug: 'control-users',

@@ -13,6 +13,7 @@ type Filter = 'all' | Project['category'];
 export class ProjectsComponent {
   readonly githubProfileUrl = GITHUB_PROFILE_URL;
   readonly filter = signal<Filter>('all');
+  readonly caseStudies = PROJECTS.filter((project) => project.caseStudy);
 
   readonly filters: { key: Filter; labelKey: string }[] = [
     { key: 'all', labelKey: 'projects.filterAll' },
@@ -24,7 +25,9 @@ export class ProjectsComponent {
   readonly visibleProjects = computed(() => {
     const filter = this.filter();
     const sorted = [...PROJECTS].sort((a, b) => Number(b.featured) - Number(a.featured));
-    return filter === 'all' ? sorted : sorted.filter((project) => project.category === filter);
+    return filter === 'all'
+      ? sorted.filter((project) => !project.caseStudy)
+      : sorted.filter((project) => project.category === filter);
   });
 
   constructor(readonly i18n: TranslationService) {}

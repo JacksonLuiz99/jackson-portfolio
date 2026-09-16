@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Abstract search interface">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#29243c"/><stop offset="1" stop-color="#111720"/></linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="24" fill="url(#bg)"/>
+  <rect x="38" y="35" width="564" height="330" rx="15" fill="#191d2a" stroke="#47415c"/>
+  <path d="M38 82h564" stroke="#47415c"/>
+  <circle cx="61" cy="59" r="6" fill="#a5b4fc"/><circle cx="83" cy="59" r="6" fill="#47415c"/><circle cx="105" cy="59" r="6" fill="#47415c"/>
+  <rect x="64" y="107" width="511" height="43" rx="9" fill="#252b3c" stroke="#505775"/>
+  <circle cx="88" cy="128" r="8" fill="none" stroke="#a5b4fc" stroke-width="3"/><path d="m94 134 6 6" stroke="#a5b4fc" stroke-width="3"/>
+  <rect x="118" y="124" width="159" height="8" rx="4" fill="#656c87"/>
+  <rect x="64" y="174" width="109" height="161" rx="9" fill="#222b3b"/>
+  <rect x="81" y="196" width="60" height="8" rx="4" fill="#8386a7"/>
+  <rect x="81" y="221" width="75" height="25" rx="5" fill="#394269"/>
+  <rect x="81" y="259" width="75" height="25" rx="5" fill="#303c56"/>
+  <rect x="81" y="300" width="57" height="14" rx="7" fill="#6677c6"/>
+  <rect x="192" y="174" width="118" height="161" rx="9" fill="#222b3b"/>
+  <circle cx="251" cy="223" r="24" fill="#566080"/><path d="M216 273c3-20 17-29 35-29s32 9 35 29" fill="#566080"/>
+  <rect x="209" y="292" width="83" height="8" rx="4" fill="#7781a0"/>
+  <rect x="209" y="311" width="57" height="7" rx="3" fill="#505d79"/>
+  <rect x="324" y="174" width="118" height="161" rx="9" fill="#222b3b"/>
+  <circle cx="383" cy="223" r="24" fill="#657489"/><path d="M348 273c3-20 17-29 35-29s32 9 35 29" fill="#657489"/>
+  <rect x="341" y="292" width="83" height="8" rx="4" fill="#7781a0"/>
+  <rect x="341" y="311" width="57" height="7" rx="3" fill="#505d79"/>
+  <rect x="456" y="174" width="118" height="161" rx="9" fill="#222b3b"/>
+  <circle cx="515" cy="223" r="24" fill="#6d668e"/><path d="M480 273c3-20 17-29 35-29s32 9 35 29" fill="#6d668e"/>
+  <rect x="473" y="292" width="83" height="8" rx="4" fill="#7781a0"/>
+  <rect x="473" y="311" width="57" height="7" rx="3" fill="#505d79"/>
+</svg>

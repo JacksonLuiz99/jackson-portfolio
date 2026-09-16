@@ -34,7 +34,8 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
     experience: {
       title: 'Trajetória',
       kicker: 'Experiência',
-      subtitle: 'Uma jornada de mais de 3 anos dentro da segurança pública, do suporte técnico à engenharia de software.',
+      subtitle:
+        'Uma jornada de mais de 3 anos dentro da segurança pública, do suporte técnico à engenharia de software.',
     },
     skills: {
       title: 'Habilidades',
@@ -47,6 +48,16 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       title: 'Projetos',
       kicker: 'O que eu construo',
       subtitle: 'Projetos pessoais, para clientes e sistemas em que atuo profissionalmente.',
+      selected: 'Em destaque',
+      selectedSubtitle:
+        'Três projetos que mostram meu trabalho em interfaces e sistemas em produção.',
+      challenge: 'O desafio',
+      contribution: 'Minha atuação',
+      outcome: 'Entrega',
+      illustration: 'Ilustração conceitual do projeto',
+      illustrationNote: 'Ilustração conceitual',
+      browseAll: 'Outros projetos',
+      filterLabel: 'Filtrar projetos',
       viewCode: 'Código',
       viewLive: 'Acessar',
       viewMore: 'Ver mais no GitHub',
@@ -103,7 +114,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       body2:
         'I have solid experience with Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse and Angular Material, applying componentization best practices, clean architecture and REST API integration. I hold a degree in Systems Analysis and Development, a postgraduate specialization in Front-End Development, and a Scrum Foundation certification.',
       body3:
-        "Outside of work, I also build personal and client projects, always looking to learn something new — currently focused on going deeper into Angular and expanding into new technologies.",
+        'Outside of work, I also build personal and client projects, always looking to learn something new — currently focused on going deeper into Angular and expanding into new technologies.',
     },
     experience: {
       title: 'Journey',
@@ -121,6 +132,15 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       title: 'Projects',
       kicker: 'What I build',
       subtitle: 'Personal projects, client work, and systems I work on professionally.',
+      selected: 'Selected work',
+      selectedSubtitle: 'Three projects that show my work on interfaces and production systems.',
+      challenge: 'The challenge',
+      contribution: 'My contribution',
+      outcome: 'What it delivers',
+      illustration: 'Conceptual illustration of the project',
+      illustrationNote: 'Conceptual illustration',
+      browseAll: 'More projects',
+      filterLabel: 'Filter projects',
       viewCode: 'Code',
       viewLive: 'Visit',
       viewMore: 'See more on GitHub',
@@ -140,7 +160,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       title: "Let's talk",
       kicker: 'Contact',
       subtitle:
-        "Open to new opportunities, freelance work, and conversations about front-end, Angular and tech. Reach out through any channel below.",
+        'Open to new opportunities, freelance work, and conversations about front-end, Angular and tech. Reach out through any channel below.',
       email: 'Email',
       whatsapp: 'WhatsApp',
     },

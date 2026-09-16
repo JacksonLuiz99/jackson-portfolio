@@ -38,4 +38,10 @@ export interface Project {
   liveUrl?: string;
   category: 'personal' | 'client' | 'work' | 'study';
   featured: boolean;
+  caseStudy?: {
+    challenge: LocalizedText;
+    contribution: LocalizedText;
+    outcome: LocalizedText;
+    illustration: string;
+  };
 }
