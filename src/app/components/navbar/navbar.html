@@ -1,0 +1,73 @@
+<header
+  class="fixed inset-x-0 top-0 z-50 border-b transition-colors"
+  [class.bg-bg/90]="scrolled()"
+  [class.backdrop-blur]="scrolled()"
+  [class.border-border]="scrolled()"
+  [class.border-transparent]="!scrolled()"
+>
+  <nav class="section-container flex h-16 items-center justify-between">
+    <a href="#top" class="font-mono text-lg font-semibold text-text" (click)="closeMobile()">
+      <span class="text-accent">&lt;</span>Jackson<span class="text-accent">/&gt;</span>
+    </a>
+
+    <ul class="hidden items-center gap-8 md:flex">
+      @for (link of links; track link.key) {
+        <li>
+          <a
+            [href]="link.href"
+            class="font-mono text-sm text-muted transition-colors hover:text-accent"
+          >{{ i18n.t('nav.' + link.key) }}</a>
+        </li>
+      }
+    </ul>
+
+    <div class="hidden items-center gap-3 md:flex">
+      <button
+        type="button"
+        (click)="i18n.toggle()"
+        class="rounded-full border border-border px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
+      >{{ i18n.lang() === 'pt' ? 'EN' : 'PT' }}</button>
+      <a
+        href="#contact"
+        class="rounded-full bg-accent px-4 py-1.5 font-mono text-sm font-medium text-bg transition-opacity hover:opacity-90"
+      >{{ i18n.t('nav.contact') }}</a>
+    </div>
+
+    <button
+      type="button"
+      class="flex h-9 w-9 items-center justify-center rounded-md border border-border text-text md:hidden"
+      (click)="toggleMobile()"
+      [attr.aria-expanded]="mobileOpen()"
+      aria-label="Menu"
+    >
+      @if (mobileOpen()) {
+        <span class="font-mono">✕</span>
+      } @else {
+        <span class="font-mono">☰</span>
+      }
+    </button>
+  </nav>
+
+  @if (mobileOpen()) {
+    <div class="border-t border-border bg-bg md:hidden">
+      <ul class="section-container flex flex-col gap-1 py-4">
+        @for (link of links; track link.key) {
+          <li>
+            <a
+              [href]="link.href"
+              (click)="closeMobile()"
+              class="block rounded-md px-2 py-2 font-mono text-sm text-muted hover:bg-surface hover:text-accent"
+            >{{ i18n.t('nav.' + link.key) }}</a>
+          </li>
+        }
+        <li class="pt-2">
+          <button
+            type="button"
+            (click)="i18n.toggle()"
+            class="w-full rounded-md border border-border px-2 py-2 text-left font-mono text-sm text-muted hover:border-accent hover:text-accent"
+          >{{ i18n.lang() === 'pt' ? 'Switch to English' : 'Mudar para Português' }}</button>
+        </li>
+      </ul>
+    </div>
+  }
+</header>
