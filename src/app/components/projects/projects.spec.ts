@@ -23,7 +23,7 @@ describe('ProjectsComponent', () => {
 
     fixture.componentInstance.toggleExpanded();
     fixture.detectChanges();
-    expect(fixture.nativeElement.querySelectorAll('article')).toHaveLength(19);
+    expect(fixture.nativeElement.querySelectorAll('article')).toHaveLength(21);
 
     fixture.componentInstance.setFilter('work');
     fixture.detectChanges();

@@ -11,6 +11,7 @@ interface TechIcon {
 const ICONS: Record<string, TechIcon> = {
   Angular: { svg: 'angular', background: '#9f1239' },
   'Angular Material': { svg: 'angular', background: '#9f1239' },
+  'Taiga UI': { mark: 'T', background: '#e34b76' },
   TypeScript: { svg: 'typescript', background: '#235b99' },
   JavaScript: { svg: 'javascript', background: '#796600' },
   RxJS: { svg: 'reactivex', background: '#9b146f' },
@@ -22,6 +23,7 @@ const ICONS: Record<string, TechIcon> = {
   CSS: { svg: 'css', background: '#155e9b' },
   SCSS: { svg: 'sass', background: '#a82d6c' },
   Java: { mark: 'J', background: '#a24d24' },
+  'Spring Boot': { mark: 'S', background: '#397b20' },
   Quarkus: { svg: 'quarkus', background: '#24568c' },
   PostgreSQL: { svg: 'postgresql', background: '#336791' },
   Docker: { svg: 'docker', background: '#1877b5' },
