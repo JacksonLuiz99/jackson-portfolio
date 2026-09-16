@@ -26,6 +26,8 @@ const ICONS: Record<string, TechIcon> = {
   'Node.js': { svg: 'nodedotjs', background: '#3d752c' },
   Git: { svg: 'git', background: '#b53419' },
   GitHub: { svg: 'github', background: '#555b66' },
+  GitLab: { svg: 'gitlab', background: '#b64a0d' },
+  Postman: { svg: 'postman', background: '#bd4619' },
   Vue: { svg: 'vuedotjs', background: '#277c57' },
   'GitLab CI/CD': { svg: 'gitlab', background: '#b64a0d' },
   WebSocket: { mark: 'WS', background: '#3b7282' },

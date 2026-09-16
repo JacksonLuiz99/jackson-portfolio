@@ -12,8 +12,10 @@
           rel="noopener"
           class="flex items-center gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent"
         >
-          <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border font-mono text-sm text-accent">
-            {{ channel.icon }}
+          <span
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-border"
+          >
+            <img [src]="channel.iconPath" alt="" class="h-5 w-5 brightness-0 invert" />
           </span>
           <span>
             <span class="block text-sm font-semibold text-text">{{ channel.label }}</span>

@@ -6,7 +6,7 @@ interface ContactChannel {
   label: string;
   value: string;
   href: string;
-  icon: string;
+  iconPath: string;
 }
 
 @Component({
@@ -16,11 +16,36 @@ interface ContactChannel {
 })
 export class ContactComponent {
   readonly channels: ContactChannel[] = [
-    { label: 'E-mail', value: CONTACT.email, href: `mailto:${CONTACT.email}`, icon: '✉' },
-    { label: 'WhatsApp', value: '+55 65 99916-1859', href: CONTACT.whatsapp, icon: '↗' },
-    { label: 'LinkedIn', value: 'in/jacksonluizdev', href: CONTACT.linkedin, icon: 'in' },
-    { label: 'GitHub', value: 'JacksonLuiz99', href: CONTACT.github, icon: '</>' },
-    { label: 'Instagram', value: '@jacksonluiz99', href: CONTACT.instagram, icon: '@' },
+    {
+      label: 'E-mail',
+      value: CONTACT.email,
+      href: `mailto:${CONTACT.email}`,
+      iconPath: 'contact-icons/email.svg',
+    },
+    {
+      label: 'WhatsApp',
+      value: '+55 65 99916-1859',
+      href: CONTACT.whatsapp,
+      iconPath: 'contact-icons/whatsapp.svg',
+    },
+    {
+      label: 'LinkedIn',
+      value: 'in/jacksonluizdev',
+      href: CONTACT.linkedin,
+      iconPath: 'contact-icons/linkedin.svg',
+    },
+    {
+      label: 'GitHub',
+      value: 'JacksonLuiz99',
+      href: CONTACT.github,
+      iconPath: 'tech-icons/github.svg',
+    },
+    {
+      label: 'Instagram',
+      value: '@jacksonluiz99',
+      href: CONTACT.instagram,
+      iconPath: 'contact-icons/instagram.svg',
+    },
   ];
 
   constructor(readonly i18n: TranslationService) {}
