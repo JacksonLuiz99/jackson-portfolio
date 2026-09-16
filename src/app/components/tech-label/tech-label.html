@@ -1,0 +1,20 @@
+<span class="inline-flex items-center gap-1.5">
+  @if (icon(); as techIcon) {
+    <span
+      aria-hidden="true"
+      class="inline-grid size-[1.15rem] shrink-0 place-items-center rounded-[0.25rem] font-sans text-[0.55rem] font-extrabold leading-none tracking-tight"
+      [style.background-color]="techIcon.background"
+    >
+      @if (techIcon.svg) {
+        <img
+          [src]="'tech-icons/' + techIcon.svg + '.svg'"
+          alt=""
+          class="size-3 brightness-0 invert"
+        />
+      } @else {
+        {{ techIcon.mark }}
+      }
+    </span>
+  }
+  <span>{{ label() }}</span>
+</span>

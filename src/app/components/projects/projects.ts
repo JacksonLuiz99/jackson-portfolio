@@ -2,11 +2,13 @@ import { Component, computed, signal } from '@angular/core';
 import { TranslationService } from '../../core/i18n/translation.service';
 import { GITHUB_PROFILE_URL, PROJECTS } from '../../data/projects.data';
 import { Project } from '../../shared/models';
+import { TechLabelComponent } from '../tech-label/tech-label';
 
 type Filter = 'all' | Project['category'];
 
 @Component({
   selector: 'app-projects',
+  imports: [TechLabelComponent],
   templateUrl: './projects.html',
   styleUrl: './projects.scss',
 })

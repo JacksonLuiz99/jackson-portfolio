@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { TranslationService } from '../../core/i18n/translation.service';
 import { SKILLS } from '../../data/profile.data';
+import { TechLabelComponent } from '../tech-label/tech-label';
 
 @Component({
   selector: 'app-skills',
+  imports: [TechLabelComponent],
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })

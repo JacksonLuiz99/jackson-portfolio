@@ -85,8 +85,8 @@
                     @for (tag of project.tags; track tag) {
                       <span
                         class="rounded-md border border-border px-2 py-0.5 font-mono text-[0.7rem] text-muted"
-                        >{{ tag }}</span
-                      >
+                        ><app-tech-label [label]="tag"
+                      /></span>
                     }
                   </div>
 
@@ -166,8 +166,8 @@
             @for (tag of project.tags; track tag) {
               <span
                 class="rounded-md border border-border px-2 py-0.5 font-mono text-[0.7rem] text-muted"
-                >{{ tag }}</span
-              >
+                ><app-tech-label [label]="tag"
+              /></span>
             }
           </div>
 
