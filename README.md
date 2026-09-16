@@ -6,6 +6,7 @@ Portfólio pessoal de Jackson Luiz, engenheiro de software front-end. A página 
 
 - Interface responsiva em página única, com navegação por seções.
 - Conteúdo em português e inglês. O idioma inicial acompanha o navegador e a escolha fica salva no `localStorage`.
+- Temas escuro, claro e âmbar, com preferência salva no navegador.
 - Projetos organizados por categoria (pessoais, clientes e trabalho), com links para código ou aplicações quando disponíveis.
 - Links diretos para os canais de contato.
 

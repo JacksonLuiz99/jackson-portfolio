@@ -10,6 +10,10 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       education: 'Formação',
       contact: 'Contato',
       resume: 'Currículo',
+      theme: 'Tema',
+      themeDark: 'Escuro',
+      themeLight: 'Claro',
+      themeAmber: 'Âmbar',
     },
     hero: {
       greeting: 'Olá, eu sou',
@@ -98,6 +102,10 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       education: 'Education',
       contact: 'Contact',
       resume: 'Resume',
+      theme: 'Theme',
+      themeDark: 'Dark',
+      themeLight: 'Light',
+      themeAmber: 'Amber',
     },
     hero: {
       greeting: "Hi, I'm",

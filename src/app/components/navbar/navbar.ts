@@ -1,5 +1,6 @@
 import { Component, HostListener, signal } from '@angular/core';
 import { TranslationService } from '../../core/i18n/translation.service';
+import { ThemeSwitcherComponent } from '../theme-switcher/theme-switcher';
 
 interface NavLink {
   key: string;
@@ -8,6 +9,7 @@ interface NavLink {
 
 @Component({
   selector: 'app-navbar',
+  imports: [ThemeSwitcherComponent],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })

@@ -10,32 +10,37 @@
       <span class="text-accent">&lt;</span>Jackson<span class="text-accent">/&gt;</span>
     </a>
 
-    <ul class="hidden items-center gap-8 md:flex">
+    <ul class="hidden items-center gap-6 xl:flex">
       @for (link of links; track link.key) {
         <li>
           <a
             [href]="link.href"
             class="font-mono text-sm text-muted transition-colors hover:text-accent"
-          >{{ i18n.t('nav.' + link.key) }}</a>
+            >{{ i18n.t('nav.' + link.key) }}</a
+          >
         </li>
       }
     </ul>
 
-    <div class="hidden items-center gap-3 md:flex">
+    <div class="hidden items-center gap-3 xl:flex">
+      <app-theme-switcher />
       <button
         type="button"
         (click)="i18n.toggle()"
         class="rounded-full border border-border px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
-      >{{ i18n.lang() === 'pt' ? 'EN' : 'PT' }}</button>
+      >
+        {{ i18n.lang() === 'pt' ? 'EN' : 'PT' }}
+      </button>
       <a
         href="#contact"
         class="rounded-full bg-accent px-4 py-1.5 font-mono text-sm font-medium text-bg transition-opacity hover:opacity-90"
-      >{{ i18n.t('nav.contact') }}</a>
+        >{{ i18n.t('nav.contact') }}</a
+      >
     </div>
 
     <button
       type="button"
-      class="flex h-9 w-9 items-center justify-center rounded-md border border-border text-text md:hidden"
+      class="flex h-9 w-9 items-center justify-center rounded-md border border-border text-text xl:hidden"
       (click)="toggleMobile()"
       [attr.aria-expanded]="mobileOpen()"
       aria-label="Menu"
@@ -49,7 +54,7 @@
   </nav>
 
   @if (mobileOpen()) {
-    <div class="border-t border-border bg-bg md:hidden">
+    <div class="border-t border-border bg-bg xl:hidden">
       <ul class="section-container flex flex-col gap-1 py-4">
         @for (link of links; track link.key) {
           <li>
@@ -57,15 +62,21 @@
               [href]="link.href"
               (click)="closeMobile()"
               class="block rounded-md px-2 py-2 font-mono text-sm text-muted hover:bg-surface hover:text-accent"
-            >{{ i18n.t('nav.' + link.key) }}</a>
+              >{{ i18n.t('nav.' + link.key) }}</a
+            >
           </li>
         }
         <li class="pt-2">
+          <app-theme-switcher [fullWidth]="true" />
+        </li>
+        <li>
           <button
             type="button"
             (click)="i18n.toggle()"
             class="w-full rounded-md border border-border px-2 py-2 text-left font-mono text-sm text-muted hover:border-accent hover:text-accent"
-          >{{ i18n.lang() === 'pt' ? 'Switch to English' : 'Mudar para Português' }}</button>
+          >
+            {{ i18n.lang() === 'pt' ? 'Switch to English' : 'Mudar para Português' }}
+          </button>
         </li>
       </ul>
     </div>
