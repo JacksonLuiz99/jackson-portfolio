@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { TranslationService } from '../../core/i18n/translation.service';
 import { TechLabelComponent } from './tech-label';
 
 describe('TechLabelComponent', () => {
@@ -22,5 +23,19 @@ describe('TechLabelComponent', () => {
     const label = fixture.nativeElement as HTMLElement;
     expect(label.textContent).toContain('SDD');
     expect(label.querySelector('img')).toBeNull();
+  });
+
+  it('translates practice labels when Spanish is selected', () => {
+    const i18n = TestBed.inject(TranslationService);
+    i18n.setLang('es');
+    const fixture = TestBed.createComponent(TechLabelComponent);
+    try {
+      fixture.componentRef.setInput('label', 'Testes unitários');
+      fixture.detectChanges();
+      expect(fixture.nativeElement.textContent).toContain('Pruebas unitarias');
+    } finally {
+      fixture.destroy();
+      localStorage.removeItem('portfolio-lang');
+    }
   });
 });

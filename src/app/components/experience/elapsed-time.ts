@@ -34,24 +34,31 @@ export function formatElapsedTime(start: string, now: number, lang: Lang): strin
   const minutes = Math.floor(remaining / 60);
   const seconds = remaining % 60;
 
-  const labels =
-    lang === 'pt'
-      ? [
-          ['mês', 'meses'],
-          ['dia', 'dias'],
-          ['hora', 'horas'],
-          ['minuto', 'minutos'],
-          ['segundo', 'segundos'],
-        ]
-      : [
-          ['month', 'months'],
-          ['day', 'days'],
-          ['hour', 'hours'],
-          ['minute', 'minutes'],
-          ['second', 'seconds'],
-        ];
+  const labels = {
+    pt: [
+      ['mês', 'meses'],
+      ['dia', 'dias'],
+      ['hora', 'horas'],
+      ['minuto', 'minutos'],
+      ['segundo', 'segundos'],
+    ],
+    en: [
+      ['month', 'months'],
+      ['day', 'days'],
+      ['hour', 'hours'],
+      ['minute', 'minutes'],
+      ['second', 'seconds'],
+    ],
+    es: [
+      ['mes', 'meses'],
+      ['día', 'días'],
+      ['hora', 'horas'],
+      ['minuto', 'minutos'],
+      ['segundo', 'segundos'],
+    ],
+  }[lang];
   const parts = [months, days, hours, minutes, seconds].map(
     (value, index) => `${value} ${labels[index][value === 1 ? 0 : 1]}`,
   );
-  return `${parts.slice(0, -1).join(', ')} ${lang === 'pt' ? 'e' : 'and'} ${parts[4]}`;
+  return `${parts.slice(0, -1).join(', ')} ${lang === 'en' ? 'and' : lang === 'pt' ? 'e' : 'y'} ${parts[4]}`;
 }

@@ -1,8 +1,9 @@
-export type Lang = 'pt' | 'en';
+export type Lang = 'pt' | 'en' | 'es';
 
 export interface LocalizedText {
   pt: string;
   en: string;
+  es: string;
 }
 
 export interface ExperienceItem {
@@ -19,14 +20,14 @@ export interface ExperienceItem {
 export interface EducationItem {
   institution: string;
   degree: LocalizedText;
-  period: string;
+  period: LocalizedText;
   details?: LocalizedText;
 }
 
 export interface CertificationItem {
   name: string;
   issuer: string;
-  date: string;
+  date: LocalizedText;
   url?: string;
 }
 

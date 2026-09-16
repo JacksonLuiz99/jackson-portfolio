@@ -24,13 +24,22 @@
 
     <div class="hidden items-center gap-3 xl:flex">
       <app-theme-switcher />
-      <button
-        type="button"
-        (click)="i18n.toggle()"
-        class="rounded-full border border-border px-3 py-1 font-mono text-xs text-muted transition-colors hover:border-accent hover:text-accent"
-      >
-        {{ i18n.lang() === 'pt' ? 'EN' : 'PT' }}
-      </button>
+      <div class="flex items-center gap-1" role="group" [attr.aria-label]="i18n.t('nav.language')">
+        @for (language of languages; track language.code) {
+          <button
+            type="button"
+            (click)="i18n.setLang(language.code)"
+            [attr.aria-label]="language.label"
+            [attr.aria-pressed]="i18n.lang() === language.code"
+            [attr.title]="language.label"
+            class="rounded-lg border px-2 py-1 text-lg leading-none transition-colors hover:border-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/30"
+            [class.border-accent]="i18n.lang() === language.code"
+            [class.border-border]="i18n.lang() !== language.code"
+          >
+            {{ language.flag }}
+          </button>
+        }
+      </div>
       <a
         href="#contact"
         class="rounded-full bg-accent px-4 py-1.5 font-mono text-sm font-medium text-bg transition-opacity hover:opacity-90"
@@ -70,13 +79,27 @@
           <app-theme-switcher [fullWidth]="true" />
         </li>
         <li>
-          <button
-            type="button"
-            (click)="i18n.toggle()"
-            class="w-full rounded-md border border-border px-2 py-2 text-left font-mono text-sm text-muted hover:border-accent hover:text-accent"
+          <span class="mb-2 block font-mono text-xs text-muted">{{ i18n.t('nav.language') }}</span>
+          <div
+            class="grid grid-cols-3 gap-2"
+            role="group"
+            [attr.aria-label]="i18n.t('nav.language')"
           >
-            {{ i18n.lang() === 'pt' ? 'Switch to English' : 'Mudar para Português' }}
-          </button>
+            @for (language of languages; track language.code) {
+              <button
+                type="button"
+                (click)="i18n.setLang(language.code)"
+                [attr.aria-label]="language.label"
+                [attr.aria-pressed]="i18n.lang() === language.code"
+                class="flex items-center justify-center gap-2 rounded-md border px-2 py-2 font-mono text-xs text-muted hover:border-accent hover:text-accent"
+                [class.border-accent]="i18n.lang() === language.code"
+                [class.border-border]="i18n.lang() !== language.code"
+              >
+                <span aria-hidden="true" class="text-lg">{{ language.flag }}</span
+                >{{ language.code.toUpperCase() }}
+              </button>
+            }
+          </div>
         </li>
       </ul>
     </div>

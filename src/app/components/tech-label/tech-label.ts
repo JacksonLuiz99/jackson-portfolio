@@ -1,4 +1,6 @@
 import { Component, computed, input } from '@angular/core';
+import { TranslationService } from '../../core/i18n/translation.service';
+import { LocalizedText } from '../../shared/models';
 
 interface TechIcon {
   svg?: string;
@@ -33,6 +35,19 @@ const ICONS: Record<string, TechIcon> = {
   WebSocket: { mark: 'WS', background: '#3b7282' },
 };
 
+const LABELS: Record<string, LocalizedText> = {
+  'Testes unitários': { pt: 'Testes unitários', en: 'Unit tests', es: 'Pruebas unitarias' },
+  'Padrões de projeto': {
+    pt: 'Padrões de projeto',
+    en: 'Design patterns',
+    es: 'Patrones de diseño',
+  },
+  Componentização: { pt: 'Componentização', en: 'Componentization', es: 'Componentización' },
+  'Suporte Técnico': { pt: 'Suporte Técnico', en: 'Technical support', es: 'Soporte técnico' },
+  Infraestrutura: { pt: 'Infraestrutura', en: 'Infrastructure', es: 'Infraestructura' },
+  Redes: { pt: 'Redes', en: 'Networks', es: 'Redes' },
+};
+
 function iconFor(label: string): TechIcon | undefined {
   if (label.startsWith('Angular ') && label !== 'Angular Material') return ICONS['Angular'];
   if (label === 'HTML5' || label === 'HTML') return ICONS['HTML'];
@@ -48,4 +63,10 @@ function iconFor(label: string): TechIcon | undefined {
 export class TechLabelComponent {
   readonly label = input.required<string>();
   readonly icon = computed(() => iconFor(this.label()));
+
+  constructor(readonly i18n: TranslationService) {}
+
+  displayLabel(): string {
+    return LABELS[this.label()]?.[this.i18n.lang()] ?? this.label();
+  }
 }

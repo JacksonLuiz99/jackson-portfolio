@@ -9,6 +9,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema que digitaliza a concessão de acesso externo de pessoas físicas às dependências da PJC-MT, cobrindo solicitação, aprovação por superior e histórico de status. Back-end em Java/Quarkus com PostgreSQL; front-end em Angular integrado a um Design System institucional.',
       en: 'A system that digitizes external-access requests to PJC-MT facilities, covering submission, supervisor approval and status history. Java/Quarkus back-end with PostgreSQL; Angular front-end built on an institutional Design System.',
+      es: 'Sistema que digitaliza las solicitudes de acceso externo a las instalaciones de la PJC-MT, incluida la solicitud, la aprobación por un superior y el historial de estados. Back-end en Java/Quarkus con PostgreSQL y front-end en Angular integrado en el sistema de diseño institucional.',
     },
     tags: ['Angular', 'Java', 'Quarkus', 'PostgreSQL'],
     liveUrl: 'https://siae.pjc.mt.gov.br/login',
@@ -18,14 +19,17 @@ export const PROJECTS: Project[] = [
       challenge: {
         pt: 'Organizar a solicitação e aprovação de acessos externos às dependências da PJC-MT.',
         en: 'Organize external access requests and approvals for PJC-MT facilities.',
+        es: 'Organizar las solicitudes y aprobaciones de acceso externo a las instalaciones de la PJC-MT.',
       },
       contribution: {
         pt: 'Front-end Angular integrado ao Design System institucional e aos fluxos de solicitação e aprovação.',
         en: 'Angular front end integrated with the institutional Design System and request and approval flows.',
+        es: 'Front-end en Angular integrado en el sistema de diseño institucional y en los flujos de solicitud y aprobación.',
       },
       outcome: {
         pt: 'Solicitações, aprovação por superior e histórico de status reunidos em um fluxo digital.',
         en: 'Requests, supervisor approval and status history brought together in a digital flow.',
+        es: 'Solicitudes, aprobación por un superior e historial de estados reunidos en un flujo digital.',
       },
       illustration: 'projects/siae.svg',
     },
@@ -36,6 +40,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema de apoio à investigação policial, com gestão de casos, consultas unificadas a fontes externas de dados e dashboards estatísticos. Autenticação corporativa robusta e controle de permissões por papel.',
       en: 'A criminal-investigation support system with case management, unified lookups across external data sources, and statistical dashboards. Robust corporate authentication with role-based permissions.',
+      es: 'Sistema de apoyo a la investigación policial con gestión de casos, consultas unificadas a fuentes de datos externas y paneles estadísticos. Incluye autenticación corporativa y permisos basados en roles.',
     },
     tags: ['Angular 17', 'RBAC'],
     liveUrl: 'https://vinculum.pjc.mt.gov.br/sign-in',
@@ -48,6 +53,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema de gestão interno da PJC-MT, em migração de Angular 19 (Material/Fuse) para Angular 22 (standalone, Signals), consumindo um Design System interno via NPM. Contribuí com o módulo de veículos e conduzi a migração do módulo de cooperação para o novo padrão.',
       en: 'An internal PJC-MT management system being migrated from Angular 19 (Material/Fuse) to Angular 22 (standalone, Signals), built on an internal Design System distributed via NPM. I contributed the vehicles module and led the migration of the cooperation module onto the new standard.',
+      es: 'Sistema interno de gestión de la PJC-MT en migración de Angular 19 (Material/Fuse) a Angular 22 (componentes independientes y Signals), basado en un sistema de diseño interno distribuido por NPM. Contribuí al módulo de vehículos y dirigí la migración del módulo de cooperación al nuevo estándar.',
     },
     tags: ['Angular 22', 'Signals', 'Standalone', 'Design System'],
     liveUrl: 'https://argusv2.pjc.mt.gov.br/sign-in',
@@ -57,14 +63,17 @@ export const PROJECTS: Project[] = [
       challenge: {
         pt: 'Migrar módulos de um sistema interno para o novo padrão de front-end da instituição.',
         en: 'Migrate internal system modules to the institution’s new front-end standard.',
+        es: 'Migrar módulos de un sistema interno al nuevo estándar front-end de la institución.',
       },
       contribution: {
         pt: 'Contribuição no módulo de veículos e condução da migração do módulo de cooperação para Angular 22.',
         en: 'Contributed to the vehicles module and led the cooperation module migration to Angular 22.',
+        es: 'Contribuí al módulo de vehículos y dirigí la migración del módulo de cooperación a Angular 22.',
       },
       outcome: {
         pt: 'Módulo de cooperação alinhado ao novo padrão com componentes standalone, Signals e Design System interno.',
         en: 'Cooperation module aligned with the new standard using standalone components, Signals and the internal Design System.',
+        es: 'Módulo de cooperación adaptado al nuevo estándar con componentes independientes, Signals y el sistema de diseño interno.',
       },
       illustration: 'projects/argus.svg',
     },
@@ -75,6 +84,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Plataforma de apoio à segurança pública para checagem de dados de pessoas e veículos, com auditoria de acessos e acompanhamento de ocorrências. Arquitetura front-end em componentes Smart/Dumb com gerenciamento de estado via Facade.',
       en: 'A public-safety support platform for checking data on people and vehicles, with access auditing and incident tracking. Smart/Dumb component front-end architecture with Facade-based state management.',
+      es: 'Plataforma de apoyo a la seguridad pública para consultar datos de personas y vehículos, con auditoría de accesos y seguimiento de incidentes. Arquitectura front-end con componentes Smart/Dumb y gestión de estado mediante Facade.',
     },
     tags: ['Angular 17', 'Angular Material'],
     liveUrl: 'https://checagem-externa.pjc.mt.gov.br/sign-in',
@@ -87,6 +97,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Front-end Angular de um sistema público de consulta a pessoas desaparecidas, criado originalmente como teste técnico de admissão. Consome uma API pública com busca por filtros e detalhes de cada caso. Stack: Angular 19, Angular Material e Tailwind CSS 4, com padrão Facade e estado reativo via RxJS; containerizado com Docker/Nginx e CI/CD no GitLab.',
       en: 'Angular front-end for a public missing-persons lookup system, originally built as a technical hiring assessment. Consumes a public API with filtered search and case details. Stack: Angular 19, Angular Material and Tailwind CSS 4, with a Facade pattern and RxJS-driven state; containerized with Docker/Nginx and GitLab CI/CD.',
+      es: 'Front-end en Angular de un sistema público de consulta de personas desaparecidas, creado originalmente como prueba técnica de selección. Consume una API pública con búsqueda filtrada y detalles de cada caso. Usa Angular 19, Angular Material y Tailwind CSS 4, el patrón Facade y estado reactivo con RxJS; se ejecuta con Docker/Nginx y CI/CD en GitLab.',
     },
     tags: ['Angular 19', 'Tailwind CSS', 'Docker', 'GitLab CI/CD'],
     liveUrl: 'https://desaparecidos.pjc.mt.gov.br/',
@@ -96,14 +107,17 @@ export const PROJECTS: Project[] = [
       challenge: {
         pt: 'Facilitar a consulta pública a casos de pessoas desaparecidas por meio de busca e filtros.',
         en: 'Make public missing-person cases easier to search and filter.',
+        es: 'Facilitar la consulta pública de casos de personas desaparecidas mediante búsquedas y filtros.',
       },
       contribution: {
         pt: 'Desenvolvimento do front-end Angular com filtros, detalhes dos casos e estado reativo via Facade e RxJS.',
         en: 'Built the Angular front end with filters, case details and reactive state through Facade and RxJS.',
+        es: 'Desarrollé el front-end en Angular con filtros, detalles de los casos y estado reactivo mediante Facade y RxJS.',
       },
       outcome: {
         pt: 'Consulta pública de pessoas desaparecidas com busca por filtros e acesso aos detalhes de cada caso.',
         en: 'Public missing-person lookup with filtered search and access to each case’s details.',
+        es: 'Consulta pública de personas desaparecidas con búsqueda filtrada y acceso a los detalles de cada caso.',
       },
       illustration: 'projects/desaparecidos.svg',
     },
@@ -114,6 +128,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema de gestão de projetos institucionais da PJC-MT, em Angular 22 (standalone, zoneless, Signals, SSR). Controla o ciclo de vida de projetos submetidos por unidades — criação, tramitação entre áreas, aprovação e notificações — com permissões por papel. Ainda em desenvolvimento, fora do ar publicamente.',
       en: 'An institutional project-management system for PJC-MT, built with Angular 22 (standalone, zoneless, Signals, SSR). Controls the full lifecycle of projects submitted by units — creation, routing between areas, approval and notifications — with role-based permissions. Still in development, not yet publicly live.',
+      es: 'Sistema de gestión de proyectos institucionales de la PJC-MT en Angular 22 (componentes independientes, sin Zone.js, Signals y SSR). Gestiona el ciclo de vida de los proyectos presentados por las unidades: creación, tramitación entre áreas, aprobación y notificaciones, con permisos basados en roles. Sigue en desarrollo y aún no está disponible públicamente.',
     },
     tags: ['Angular 22', 'Zoneless', 'Signals', 'SSR'],
     category: 'work',
@@ -125,6 +140,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema de gestão de chamados de suporte técnico, reescrito de um app legado em Vue 3/Quasar para Angular moderno. Usuários abrem e acompanham chamados; atendentes gerenciam atendimentos em tempo real, com controle de acesso por perfil, anexos e módulos complementares.',
       en: 'A technical-support ticketing system, rewritten from a legacy Vue 3/Quasar app to modern Angular. Users open and track tickets while agents manage them in real time, with role-based access control, attachments and complementary modules.',
+      es: 'Sistema de gestión de solicitudes de soporte técnico, reescrito desde una aplicación anterior en Vue 3/Quasar a Angular moderno. Los usuarios crean y siguen sus solicitudes, mientras que los agentes las gestionan en tiempo real, con permisos por perfil, archivos adjuntos y módulos complementarios.',
     },
     tags: ['Angular', 'Signals', 'WebSocket', 'SSR'],
     liveUrl: 'https://sac.pjc.mt.gov.br/login',
@@ -137,6 +153,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Aplicação para consulta de pessoas desaparecidas, desenvolvida como projeto prático para o processo seletivo SEPLAG/PJC. Consumo de API REST, autenticação, paginação e boas práticas de front-end.',
       en: 'Missing-persons lookup application, built as a practical project for a public selection process at SEPLAG/PJC. REST API consumption, authentication, pagination and front-end best practices.',
+      es: 'Aplicación de consulta de personas desaparecidas, desarrollada como proyecto práctico para un proceso público de selección de SEPLAG/PJC. Integra una API REST, autenticación, paginación y buenas prácticas de front-end.',
     },
     tags: ['Angular', 'TypeScript', 'API REST'],
     repoUrl: `https://github.com/${GITHUB_USER}/pjc-desaparecidos`,
@@ -149,6 +166,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema web para cadastro, listagem, edição e exclusão de usuários, com Angular 17, Angular Material e Firebase — ideal para empresas que precisam gerenciar informações de usuários.',
       en: 'Web system for user CRUD (create, list, edit, delete), built with Angular 17, Angular Material and Firebase — ideal for companies managing user data.',
+      es: 'Sistema web para crear, consultar, editar y eliminar usuarios, desarrollado con Angular 17, Angular Material y Firebase; pensado para organizaciones que gestionan datos de usuarios.',
     },
     tags: ['Angular', 'Angular Material', 'Firebase', 'TypeScript'],
     repoUrl: `https://github.com/${GITHUB_USER}/control-users`,
@@ -161,6 +179,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Sistema de helpdesk full stack, com front-end em Angular/TypeScript e back-end em Java, inspirado na rotina de suporte técnico.',
       en: 'Full-stack helpdesk system, with an Angular/TypeScript front-end and a Java back-end, inspired by real technical support workflows.',
+      es: 'Sistema de soporte técnico full stack, con front-end en Angular/TypeScript y back-end en Java, inspirado en procesos reales de atención técnica.',
     },
     tags: ['Angular', 'TypeScript', 'Java'],
     repoUrl: `https://github.com/${GITHUB_USER}/helpdesk-frontend`,
@@ -173,6 +192,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Site desenvolvido para um cliente real do ramo de mercearias.',
       en: 'Website developed for a real grocery-store client.',
+      es: 'Sitio web desarrollado para un cliente del sector de las tiendas de alimentación.',
     },
     tags: ['TypeScript'],
     repoUrl: `https://github.com/${GITHUB_USER}/klebao-mercearias`,
@@ -185,6 +205,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Página institucional criada para uma barbearia.',
       en: 'Institutional landing page built for a barbershop.',
+      es: 'Página institucional creada para una barbería.',
     },
     tags: ['HTML', 'CSS'],
     repoUrl: `https://github.com/${GITHUB_USER}/BarbeariaLS`,
@@ -197,6 +218,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Site institucional para uma agência de turismo.',
       en: 'Institutional website for a tourism agency.',
+      es: 'Sitio web institucional para una agencia de turismo.',
     },
     tags: ['HTML', 'CSS'],
     repoUrl: `https://github.com/${GITHUB_USER}/ALVTurismo`,
@@ -209,6 +231,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Aplicação para gestão simplificada de clientes.',
       en: 'Application for simplified client management.',
+      es: 'Aplicación para simplificar la gestión de clientes.',
     },
     tags: ['TypeScript'],
     repoUrl: `https://github.com/${GITHUB_USER}/cliente-facil`,
@@ -221,6 +244,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Aplicação para organização e apresentação de passeios/turismo.',
       en: 'Application for organizing and showcasing tours.',
+      es: 'Aplicación para organizar y presentar excursiones turísticas.',
     },
     tags: ['TypeScript'],
     repoUrl: `https://github.com/${GITHUB_USER}/tour-app`,
@@ -233,6 +257,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Página institucional da Polícia Judiciária Civil de Mato Grosso que comunica o bloqueio de acesso a um domínio por ordem judicial. Layout responsivo com identidade visual oficial.',
       en: 'Institutional page for the Civil Police of Mato Grosso communicating a court-ordered domain block. Responsive layout with official visual identity.',
+      es: 'Página institucional de la Policía Civil de Mato Grosso que comunica el bloqueo de acceso a un dominio por orden judicial. Diseño adaptable con identidad visual oficial.',
     },
     tags: ['CSS', 'HTML'],
     repoUrl: `https://github.com/${GITHUB_USER}/pagina-de-bloqueio-pjc`,
@@ -245,6 +270,7 @@ export const PROJECTS: Project[] = [
     description: {
       pt: 'Jogo simples criado para testar habilidades com JavaScript puro.',
       en: 'Simple game built to test vanilla JavaScript skills.',
+      es: 'Juego sencillo creado para practicar JavaScript puro.',
     },
     tags: ['JavaScript', 'HTML'],
     repoUrl: `https://github.com/${GITHUB_USER}/GameEstourandoBaloes`,

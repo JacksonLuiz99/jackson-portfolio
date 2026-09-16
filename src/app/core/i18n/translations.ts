@@ -14,6 +14,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       themeDark: 'Escuro',
       themeLight: 'Claro',
       themeAmber: 'Âmbar',
+      language: 'Idioma',
     },
     hero: {
       greeting: 'Olá, eu sou',
@@ -78,6 +79,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       kicker: 'Estudo contínuo',
       educationSubtitle: 'Formação acadêmica',
       certsSubtitle: 'Licenças e certificados',
+      languages: 'Idiomas',
       viewCredential: 'Ver credencial',
     },
     contact: {
@@ -87,6 +89,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
         'Aberto a novas oportunidades, freelas e trocas sobre front-end, Angular e tecnologia. Me chama em qualquer um dos canais abaixo.',
       email: 'E-mail',
       whatsapp: 'WhatsApp',
+      whatsappMessage: 'Olá Jackson, gostei do seu portfólio e queria falar com você.',
     },
     footer: {
       rights: 'Todos os direitos reservados.',
@@ -106,6 +109,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       themeDark: 'Dark',
       themeLight: 'Light',
       themeAmber: 'Amber',
+      language: 'Language',
     },
     hero: {
       greeting: "Hi, I'm",
@@ -168,6 +172,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       kicker: 'Always learning',
       educationSubtitle: 'Academic background',
       certsSubtitle: 'Licenses & certifications',
+      languages: 'Languages',
       viewCredential: 'View credential',
     },
     contact: {
@@ -177,10 +182,107 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
         'Open to new opportunities, freelance work, and conversations about front-end, Angular and tech. Reach out through any channel below.',
       email: 'Email',
       whatsapp: 'WhatsApp',
+      whatsappMessage: 'Hi Jackson, I liked your portfolio and would like to talk with you.',
     },
     footer: {
       rights: 'All rights reserved.',
       builtWith: 'Built with Angular and Tailwind CSS.',
+    },
+  },
+  es: {
+    nav: {
+      about: 'Sobre mí',
+      experience: 'Trayectoria',
+      skills: 'Habilidades',
+      projects: 'Proyectos',
+      education: 'Formación',
+      contact: 'Contacto',
+      resume: 'Currículum',
+      theme: 'Tema',
+      themeDark: 'Oscuro',
+      themeLight: 'Claro',
+      themeAmber: 'Ámbar',
+      language: 'Idioma',
+    },
+    hero: {
+      greeting: 'Hola, soy',
+      name: 'Jackson Luiz',
+      role: 'Ingeniero de Software Front-End',
+      tagline:
+        'Construyo interfaces modernas y escalables con Angular y TypeScript. Actualmente trabajo en la Policía Civil de Mato Grosso, mejorando sistemas que requieren estabilidad, claridad y responsabilidad.',
+      ctaProjects: 'Ver proyectos',
+      ctaContact: 'Hablemos',
+      available: 'Disponible para oportunidades',
+    },
+    about: {
+      title: 'Sobre mí',
+      kicker: 'Quién soy',
+      body1:
+        'Soy analista de sistemas, seleccionado mediante un proceso público de SEPLAG-MT, y actualmente trabajo como ingeniero de software sénior en la Policía Civil de Mato Grosso (PJC-MT). Desarrollo sistemas de integración de datos e inteligencia, con atención al rendimiento, la escalabilidad y la experiencia de usuario.',
+      body2:
+        'Tengo experiencia con Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse y Angular Material. Aplico buenas prácticas de componentes, arquitectura limpia e integración con API REST. Soy graduado en Análisis y Desarrollo de Sistemas, tengo una especialización en Desarrollo Front-End y una certificación Scrum Foundation.',
+      body3:
+        'Fuera del trabajo también desarrollo proyectos personales y para clientes. Sigo aprendiendo, actualmente con el objetivo de profundizar en Angular y explorar nuevas tecnologías.',
+    },
+    experience: {
+      title: 'Trayectoria',
+      kicker: 'Experiencia',
+      subtitle:
+        'Más de 3 años en el ámbito de la seguridad pública, desde el soporte técnico hasta la ingeniería de software.',
+    },
+    skills: {
+      title: 'Habilidades',
+      kicker: 'Cómo trabajo',
+      frontend: 'Front-End',
+      backendTools: 'Back-End y herramientas',
+      practices: 'Prácticas y metodologías',
+      aiWorkflow: 'IA y flujo de trabajo',
+      aiWorkflowDescription:
+        'Uso Claude y Codex con el enfoque SDD y herramientas como Headroom y RTK.',
+    },
+    projects: {
+      title: 'Proyectos',
+      kicker: 'Lo que construyo',
+      subtitle:
+        'Proyectos personales, trabajos para clientes y sistemas en los que participo profesionalmente.',
+      selected: 'Destacados',
+      selectedSubtitle:
+        'Tres proyectos que muestran mi trabajo en interfaces y sistemas en producción.',
+      challenge: 'El desafío',
+      contribution: 'Mi participación',
+      outcome: 'Resultado',
+      illustration: 'Ilustración conceptual del proyecto',
+      illustrationNote: 'Ilustración conceptual',
+      browseAll: 'Otros proyectos',
+      filterLabel: 'Filtrar proyectos',
+      viewCode: 'Código',
+      viewLive: 'Visitar',
+      viewMore: 'Ver más en GitHub',
+      filterAll: 'Todos',
+      filterPersonal: 'Personales',
+      filterClient: 'Clientes',
+      filterWork: 'Trabajo',
+    },
+    education: {
+      title: 'Formación y certificados',
+      kicker: 'Aprendizaje continuo',
+      educationSubtitle: 'Formación académica',
+      certsSubtitle: 'Licencias y certificados',
+      languages: 'Idiomas',
+      viewCredential: 'Ver credencial',
+    },
+    contact: {
+      title: 'Hablemos',
+      kicker: 'Contacto',
+      subtitle:
+        'Estoy abierto a nuevas oportunidades, proyectos independientes y conversaciones sobre front-end, Angular y tecnología. Contáctame por cualquiera de los canales siguientes.',
+      email: 'Correo electrónico',
+      whatsapp: 'WhatsApp',
+      whatsappMessage: 'Hola Jackson, me gustó tu portafolio y me gustaría hablar contigo.',
+    },
+    footer: {
+      rights: 'Todos los derechos reservados.',
+      builtWith: 'Hecho con Angular y Tailwind CSS.',
     },
   },
 };

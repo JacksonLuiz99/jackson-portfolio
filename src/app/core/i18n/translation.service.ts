@@ -1,4 +1,5 @@
-import { Injectable, signal } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Injectable, inject, signal } from '@angular/core';
 import { Lang } from '../../shared/models';
 import { TRANSLATIONS } from './translations';
 
@@ -6,14 +7,16 @@ const STORAGE_KEY = 'portfolio-lang';
 
 @Injectable({ providedIn: 'root' })
 export class TranslationService {
+  private readonly document = inject(DOCUMENT);
   readonly lang = signal<Lang>(this.readInitialLang());
 
-  toggle(): void {
-    this.setLang(this.lang() === 'pt' ? 'en' : 'pt');
+  constructor() {
+    this.document.documentElement.lang = { pt: 'pt-BR', en: 'en-US', es: 'es-ES' }[this.lang()];
   }
 
   setLang(lang: Lang): void {
     this.lang.set(lang);
+    this.document.documentElement.lang = { pt: 'pt-BR', en: 'en-US', es: 'es-ES' }[lang];
     try {
       localStorage.setItem(STORAGE_KEY, lang);
     } catch {
@@ -31,12 +34,13 @@ export class TranslationService {
   private readInitialLang(): Lang {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved === 'pt' || saved === 'en') {
+      if (saved === 'pt' || saved === 'en' || saved === 'es') {
         return saved;
       }
     } catch {
       /* localStorage indisponível */
     }
-    return navigator.language?.toLowerCase().startsWith('en') ? 'en' : 'pt';
+    const browserLang = navigator.language?.toLowerCase();
+    return browserLang?.startsWith('es') ? 'es' : browserLang?.startsWith('en') ? 'en' : 'pt';
   }
 }

@@ -1,5 +1,6 @@
 import { Component, HostListener, signal } from '@angular/core';
 import { TranslationService } from '../../core/i18n/translation.service';
+import { Lang } from '../../shared/models';
 import { ThemeSwitcherComponent } from '../theme-switcher/theme-switcher';
 
 interface NavLink {
@@ -14,6 +15,11 @@ interface NavLink {
   styleUrl: './navbar.scss',
 })
 export class NavbarComponent {
+  readonly languages: { code: Lang; flag: string; label: string }[] = [
+    { code: 'pt', flag: '🇧🇷', label: 'Português (Brasil)' },
+    { code: 'en', flag: '🇺🇸', label: 'English (United States)' },
+    { code: 'es', flag: '🇪🇸', label: 'Español (España)' },
+  ];
   readonly mobileOpen = signal(false);
   readonly scrolled = signal(false);
 

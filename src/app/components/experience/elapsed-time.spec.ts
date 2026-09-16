@@ -3,7 +3,7 @@ import { formatElapsedTime } from './elapsed-time';
 describe('formatElapsedTime', () => {
   const start = '2026-04-01T00:00:00-04:00';
 
-  it('shows calendar months, days, hours, minutes and seconds in Portuguese and English', () => {
+  it('shows calendar months, days, hours, minutes and seconds in all languages', () => {
     const now = Date.parse('2026-05-03T02:03:04-04:00');
 
     expect(formatElapsedTime(start, now, 'pt')).toBe(
@@ -11,6 +11,9 @@ describe('formatElapsedTime', () => {
     );
     expect(formatElapsedTime(start, now, 'en')).toBe(
       '1 month, 2 days, 2 hours, 3 minutes and 4 seconds',
+    );
+    expect(formatElapsedTime(start, now, 'es')).toBe(
+      '1 mes, 2 días, 2 horas, 3 minutos y 4 segundos',
     );
   });
 

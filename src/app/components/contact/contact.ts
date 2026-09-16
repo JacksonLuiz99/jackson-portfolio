@@ -7,6 +7,7 @@ interface ContactChannel {
   value: string;
   href: string;
   iconPath: string;
+  messageKey?: string;
 }
 
 @Component({
@@ -27,6 +28,7 @@ export class ContactComponent {
       value: '+55 65 99916-1859',
       href: CONTACT.whatsapp,
       iconPath: 'contact-icons/whatsapp.svg',
+      messageKey: 'contact.whatsappMessage',
     },
     {
       label: 'LinkedIn',
@@ -49,4 +51,10 @@ export class ContactComponent {
   ];
 
   constructor(readonly i18n: TranslationService) {}
+
+  hrefFor(channel: ContactChannel): string {
+    return channel.messageKey
+      ? `${channel.href}&text=${encodeURIComponent(this.i18n.t(channel.messageKey))}`
+      : channel.href;
+  }
 }

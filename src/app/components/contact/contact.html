@@ -7,7 +7,7 @@
     <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       @for (channel of channels; track channel.label) {
         <a
-          [href]="channel.href"
+          [href]="hrefFor(channel)"
           target="_blank"
           rel="noopener"
           class="flex items-center gap-4 rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent"
