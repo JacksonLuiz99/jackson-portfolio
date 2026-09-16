@@ -218,20 +218,22 @@ export const CERTIFICATIONS: CertificationItem[] = [
     url: 'https://www.udemy.com/certificate/UC-326644fd-8c46-4374-8381-7f4f36bea6e8/',
   },
   {
+    name: 'Java para Iniciantes ao Intermediário',
+    issuer: 'Udemy',
+    date: { pt: '', en: '', es: '' },
+    url: 'https://www.udemy.com/certificate/UC-b613f18f-f47f-49b2-a2c9-4661c99471f3/',
+  },
+  {
+    name: 'Discover',
+    issuer: 'Rocketseat',
+    date: { pt: 'jun de 2023', en: 'Jun 2023', es: 'jun de 2023' },
+    url: 'https://app.rocketseat.com.br/certificates/68d75987-ab2d-4663-a181-cb9155dc8c59',
+  },
+  {
     name: 'Manipulando banco de dados com Navicat',
     issuer: 'Udemy',
     date: { pt: 'jun de 2023', en: 'Jun 2023', es: 'jun de 2023' },
     url: 'https://www.udemy.com/certificate/UC-0a6f4707-beef-4479-a50ffa7501f6a8dc/',
-  },
-  {
-    name: 'DevLinks',
-    issuer: 'Rocketseat',
-    date: { pt: 'jun de 2023', en: 'Jun 2023', es: 'jun de 2023' },
-  },
-  {
-    name: 'Scrum Foundation Professional Certificate (SFPC)',
-    issuer: 'Certiprof',
-    date: { pt: 'jun de 2023', en: 'Jun 2023', es: 'jun de 2023' },
   },
   {
     name: 'Curso de PHP',
@@ -239,10 +241,10 @@ export const CERTIFICATIONS: CertificationItem[] = [
     date: { pt: 'mar de 2018', en: 'Mar 2018', es: 'mar de 2018' },
   },
   {
-    name: 'Java para Iniciantes ao Intermediário',
-    issuer: 'Udemy',
-    date: { pt: '', en: '', es: '' },
-    url: 'https://www.udemy.com/certificate/UC-b613f18f-f47f-49b2-a2c9-4661c99471f3/',
+    name: 'Lifelong Learning',
+    issuer: 'CertiProf',
+    date: { pt: 'jun de 2025', en: 'Jun 2025', es: 'jun de 2025' },
+    url: 'https://www.credly.com/badges/17660ccf-3d23-4e8f-864d-c311347f891b/linked_in_profile',
   },
 ];
 

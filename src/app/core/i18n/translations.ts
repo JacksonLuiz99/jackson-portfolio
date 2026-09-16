@@ -32,7 +32,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       body1:
         'Sou Analista de Sistemas, aprovado no seletivo da SEPLAG-MT, atuando atualmente como Engenheiro de Software Sênior na Polícia Judiciária Civil de Mato Grosso (PJC-MT). Trabalho no desenvolvimento de sistemas voltados à integração de dados e inteligência, com foco em performance, escalabilidade e experiência do usuário.',
       body2:
-        'Tenho sólida experiência com Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse e Angular Material, aplicando boas práticas de componentização, arquitetura limpa e integração com APIs REST. Sou graduado em Análise e Desenvolvimento de Sistemas, pós-graduado em Desenvolvimento Front-End e certificado em Scrum Foundation.',
+        'Tenho sólida experiência com Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse e Angular Material, aplicando boas práticas de componentização, arquitetura limpa e integração com APIs REST. Sou graduado em Análise e Desenvolvimento de Sistemas e pós-graduado em Desenvolvimento Front-End.',
       body3:
         'Fora do trabalho, também desenvolvo projetos pessoais e para clientes, sempre buscando aprender algo novo — hoje com foco em me aprofundar em Angular e expandir para novas tecnologias.',
     },
@@ -129,7 +129,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       body1:
         "I'm a Systems Analyst, selected through Mato Grosso's SEPLAG public process, currently working as Senior Software Engineer at the Civil Police of Mato Grosso (PJC-MT). I work on systems focused on data integration and intelligence, with an emphasis on performance, scalability and user experience.",
       body2:
-        'I have solid experience with Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse and Angular Material, applying componentization best practices, clean architecture and REST API integration. I hold a degree in Systems Analysis and Development, a postgraduate specialization in Front-End Development, and a Scrum Foundation certification.',
+        'I have solid experience with Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse and Angular Material, applying componentization best practices, clean architecture and REST API integration. I hold a degree in Systems Analysis and Development and a postgraduate specialization in Front-End Development.',
       body3:
         'Outside of work, I also build personal and client projects, always looking to learn something new — currently focused on going deeper into Angular and expanding into new technologies.',
     },
@@ -224,7 +224,7 @@ export const TRANSLATIONS: Record<Lang, Record<string, any>> = {
       body1:
         'Soy analista de sistemas, seleccionado mediante un proceso público de SEPLAG-MT, y actualmente trabajo como ingeniero de software sénior en la Policía Civil de Mato Grosso (PJC-MT). Desarrollo sistemas de integración de datos e inteligencia, con atención al rendimiento, la escalabilidad y la experiencia de usuario.',
       body2:
-        'Tengo experiencia con Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse y Angular Material. Aplico buenas prácticas de componentes, arquitectura limpia e integración con API REST. Soy graduado en Análisis y Desarrollo de Sistemas, tengo una especialización en Desarrollo Front-End y una certificación Scrum Foundation.',
+        'Tengo experiencia con Angular, TypeScript, Tailwind CSS, PrimeNG, Fuse y Angular Material. Aplico buenas prácticas de componentes, arquitectura limpia e integración con API REST. Soy graduado en Análisis y Desarrollo de Sistemas y tengo una especialización en Desarrollo Front-End.',
       body3:
         'Fuera del trabajo también desarrollo proyectos personales y para clientes. Sigo aprendiendo, actualmente con el objetivo de profundizar en Angular y explorar nuevas tecnologías.',
     },
