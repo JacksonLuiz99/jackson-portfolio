@@ -44,6 +44,7 @@ describe('TechLabelComponent', () => {
   it('links PJC Kit to its documentation', () => {
     const fixture = TestBed.createComponent(TechLabelComponent);
     fixture.componentRef.setInput('label', 'PJC Kit');
+    fixture.componentRef.setInput('documentationUrl', 'https://pjckit.geia.vip/docs/v0/inicio');
     fixture.detectChanges();
 
     const link = fixture.nativeElement.querySelector('a') as HTMLAnchorElement;
